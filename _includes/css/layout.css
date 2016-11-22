@@ -27,8 +27,8 @@ footer {
 
 /* #Images */
 .logo {
-  // background: url(asset_path("{{ images/logo.png }}")) no-repeat;
-  // background: url(asset_path("{{ images/logo.svg }}")) no-repeat;
+  // background: url(asset_path("{{ img/logo.png }}")) no-repeat;
+  // background: url(asset_path("{{ img/logo.svg }}")) no-repeat;
   width: 327px;
   height: 44px;
   display: inline-block;
@@ -36,8 +36,8 @@ footer {
 }
 
 .logo-white {
-  background: url("{{site.baseurl}}/images/logo_white.png") no-repeat;
-  background: url("{{site.baseurl}}/images/logo_white.svg") no-repeat;
+  background: url("{{site.baseurl}}/img/logo_white.png") no-repeat;
+  background: url("{{site.baseurl}}/img/logo_white.svg") no-repeat;
   width: 327px;
   height: 44px;
   display: inline-block;
