@@ -1,0 +1,5 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+title: Bettina Stingelin
+email: ""
+description: > # this means to ignore newlines until "baseurl:"
+exclude: ['README.md', 'Gemfile.lock', 'vendor']
