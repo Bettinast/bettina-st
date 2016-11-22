@@ -1,0 +1,24 @@
+a {
+  color: #1006FF;
+}
+
+.btn {
+  background: #1006FF;
+  padding: 10px 20px;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+		 -moz-transition: all 0.5s ease;
+					transition: all 0.5s ease;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
+}
+.btn:hover {
+  background: #fff;
+  color: #1006FF;
+}
