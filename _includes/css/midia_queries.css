@@ -1,0 +1,13 @@
+@media only screen and (max-width:940px){
+  .flex-content {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .flex-item {
+    margin: 40px;
+  }
+  .footer-navegation-content {
+    width: 100%;
+    text-align: center;
+  }
+}

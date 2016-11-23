@@ -22,3 +22,22 @@ a {
   background: #fff;
   color: #1006FF;
 }
+input {
+  padding: 10.5px;
+  border: 0;
+}
+input.footer-input {
+  border: 0;
+  width: 41%;
+  -webkit-border-radius: 50px 0 50px 0;
+     -moz-border-radius: 50px 0 0 50px;
+          border-radius: 50px 0 0 50px;
+}
+.btn-footer-input {
+  margin-left: -5px;
+  padding: 10.5px 20px;
+  vertical-align: bottom;
+  -webkit-border-radius: 0 50px 50px 0;
+     -moz-border-radius: 0 50px 50px 0;
+          border-radius: 0 50px 50px 0;
+}
