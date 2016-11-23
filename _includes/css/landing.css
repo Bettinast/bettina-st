@@ -1,3 +1,5 @@
-body {
-  background: #F3F7F8;
+.bg-landing-top {
+  background: url("{{site.baseurl}}/img/bg_landing_top.jpg") no-repeat;
+  width: 100%;
+  background-size: cover;
 }
