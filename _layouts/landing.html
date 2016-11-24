@@ -2,14 +2,16 @@
   <body>
     <header class="site-header bg-landing-top" role="banner">
       <header class="header">
-        <div class="header-navegation navegation-langind">
-          <div class="header-logo"></div>
-          <a class="navegation-link" href="#">Sobre</a>
-          <a class="navegation-link" href="#">Livros</a>
-          <a class="navegation-link" href="#">Ficção</a>
-          <a class="navegation-link" href="#">Infantil</a>
-          <a class="navegation-link" href="#">Blog</a>
-          <a class="navegation-link" href="#">Comprar</a>
+        <div class="header-navegation navegation-landing">
+          <div class="header-logo logo-white logo-white-landing"></div>
+          <div class="navegation-link-content">
+            <a class="navegation-link" href="#">Sobre</a>
+            <a class="navegation-link" href="#">Livros</a>
+            <a class="navegation-link" href="#">Ficção</a>
+            <a class="navegation-link" href="#">Infantil</a>
+            <a class="navegation-link" href="#">Blog</a>
+            <a class="btn btn-white btn-white-landing" href="#">Comprar</a>
+          </div>
         </div>
         <div class="header-content">
           <h1>
@@ -23,7 +25,7 @@
     </header>
     <section>
       <div class="wrapper">
-        {{ content }}
+        {{ content }} Conteúdo
       </div>
     </section>
     {% include footer.html %}

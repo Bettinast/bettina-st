@@ -1,5 +1,10 @@
 .bg-landing-top {
   background: url("{{site.baseurl}}/img/bg_landing_top.jpg") no-repeat;
   width: 100%;
+  height: 80%;
   background-size: cover;
+}
+
+.logo-white-landing {
+  margin-top: 30px;
 }
