@@ -25,7 +25,6 @@
   width: 100%;
   height: 700px;
   display: table;
-  padding: 0 10%;
   background-size: cover;
 }
 .landing-about-content {
@@ -35,7 +34,16 @@
 }
 .landing-about-description {
   width: 400px;
+  padding: 0 10%;
   color: #fff;
   font-size: 18px;
   line-height: 28px;
+}
+.midia-landing {
+  padding: 0 0 180px 0;
+}
+.midia-press,
+.midia-bookstores {
+  display: inline-block;
+  width: 45%;
 }
