@@ -1,6 +1,11 @@
 markdown: kramdown
+
+### Site info:
 baseurl: "" # the subpath of your site, e.g. /blog
-title: Bettina Stingelin
+author: Bettina Stingelin
+title: Bettina Stingelin writer
 email: ""
 description: > # this means to ignore newlines until "baseurl:"
+
+### App info:
 exclude: ['README.md', 'Gemfile.lock', 'vendor']

@@ -4,7 +4,38 @@
   height: 80%;
   background-size: cover;
 }
-
 .logo-white-landing {
   margin-top: 30px;
+}
+.header-content {
+  margin-top: 100px;
+}
+.header-title {
+  color: #fff;
+  font-size: 80px;
+}
+.header-sub-title {
+  color: #fff;
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.landing-about {
+  background: url("{{site.baseurl}}/img/landing_bet_middle.png") no-repeat;
+  width: 100%;
+  height: 700px;
+  display: table;
+  padding: 0 10%;
+  background-size: cover;
+}
+.landing-about-content {
+  display: table-cell;
+  height: 200px;
+  vertical-align: middle;
+}
+.landing-about-description {
+  width: 400px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
 }

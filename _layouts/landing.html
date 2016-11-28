@@ -6,7 +6,6 @@
           <div class="header-logo logo-white logo-white-landing"></div>
           <div class="navegation-link-content">
             <a class="navegation-link" href="#">Sobre</a>
-            <a class="navegation-link" href="#">Livros</a>
             <a class="navegation-link" href="#">Ficção</a>
             <a class="navegation-link" href="#">Infantil</a>
             <a class="navegation-link" href="#">Blog</a>
@@ -14,10 +13,10 @@
           </div>
         </div>
         <div class="header-content">
-          <h1>
-            Bettina Stingelin
+          <h1 class="header-title">
+            {{ site.author }}
           </h1>
-          <p>
+          <p class="header-sub-title">
             Em seu íntimo sabia que um dia estaria a correr livremente por um lugar só seu, em que poderia ser só ela, mas não ela só - concluíra que a solidão não é um estado físico, mas sim de espírito. Na sua imaginação fértil de menina, seria como calçar finalmente os sapatos certos, depois de anos de calos e dores lancinantes nas solas dos pés. Então ela desfez as amarras, levantou âncora e içou as velas
           </p>
         </div>
@@ -25,7 +24,39 @@
     </header>
     <section>
       <div class="wrapper">
-        {{ content }} Conteúdo
+        {{ content }}
+        <div class="page-content section-news">
+          <h2>
+            Lançamento
+          </h2>
+          <h2>
+            Livros
+          </h2>
+        </div>
+        <div class="section-divisor"></div>
+        <div class="page-content midia">
+          <h2>
+            Mídia
+          </h2>
+          <h2>
+            Obras presente em
+          </h2>
+        </div>
+        <div class="landing-about">
+          <div class="page-content landing-about-content">
+            <div class="landing-about-description">
+              <h2>
+                Ler é aprender
+              </h2>
+              <p class="serif-font">
+                Ler é ter espírito aventureiro, é desbravar o desconhecido e não ter medo de aprender.
+              </p>
+              <p>
+                {{ site.author }}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     {% include footer.html %}

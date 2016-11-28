@@ -26,10 +26,16 @@ footer {
   margin: 0 auto;
 }
 
+/* #Content */
+.page-content {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 /* #Images */
 .logo {
-  // background: url(asset_path("{{ img/logo.png }}")) no-repeat;
-  // background: url(asset_path("{{ img/logo.svg }}")) no-repeat;
+  background: url(asset_path("{{ img/logo.png }}")) no-repeat;
+  background: url(asset_path("{{ img/logo.svg }}")) no-repeat;
   width: 327px;
   height: 44px;
   display: inline-block;
@@ -44,6 +50,16 @@ footer {
   display: inline-block;
   position: relative;
 }
+
+.section-divisor {
+  background: url("{{site.baseurl}}/img/section_divisor.png") no-repeat;
+  width: 100%;
+  height: 270px;
+  display: inline-block;
+  position: relative;
+  background-size: cover;
+}
+
 
 /* #flex-content */
 .flex-content {
