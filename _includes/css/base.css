@@ -20,13 +20,15 @@ a:hover {
 }
 
 .navegation-landing .navegation-link {
-  color: #fff;
-  font-weight: normal;
+  color: #1D1D1D;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
   font-size: .9em;
   padding: 0 10px;
+}
+.text-white {
+  color: #fff !important;
 }
 .navegation-landing .navegation-link:hover {
   text-decoration: underline;
@@ -44,6 +46,15 @@ a:hover {
   height: 18px;
   background-position: 0 0;
   vertical-align: middle;
+}
+.new-target {
+  background: url("{{site.baseurl}}/img/lancamento_target.png") no-repeat;
+  background-size: 100%;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  right: -20px;
+  top: -40px;
 }
 
 /* #Buttons */

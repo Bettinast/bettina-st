@@ -26,17 +26,29 @@ footer {
   max-width: 1170px;
   margin: 0 auto;
 }
+.header-pages {
+  background: #F3F7F8;
+}
+.header-content-pages {
+  padding: 30px;
+  text-align: center;
+  font-size: 31px;
+  font-weight: bold;
+}
 
 /* #Content */
 .page-content {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
+  position: relative;
+  vertical-align: top;
 }
 
 /* #Images */
 .logo {
-  background: url(asset_path("{{ img/logo.png }}")) no-repeat;
-  background: url(asset_path("{{ img/logo.svg }}")) no-repeat;
+  background: url("{{site.baseurl}}/img/logo.png") no-repeat;
+  background: url("{{site.baseurl}}/img/logo.svg") no-repeat;
+  margin-top: 30px;
   width: 327px;
   height: 44px;
   display: inline-block;
@@ -46,6 +58,7 @@ footer {
 .logo-white {
   background: url("{{site.baseurl}}/img/logo_white.png") no-repeat;
   background: url("{{site.baseurl}}/img/logo_white.svg") no-repeat;
+  margin-top: 30px;
   width: 327px;
   height: 44px;
   display: inline-block;
@@ -62,6 +75,23 @@ footer {
   background-size: cover;
 }
 
+/* #Bettina-Grid */
+.bet-grid {
+  width: 100%;
+}
+.bet-2-col {
+  width: 45%;
+  margin: 50px 0;
+  padding: 0 20px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bet-2-col img {
+  width: 80%;
+  padding-left: 50px;
+}
 
 /* #flex-content */
 .flex-content {

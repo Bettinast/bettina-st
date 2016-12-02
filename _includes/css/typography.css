@@ -18,6 +18,9 @@ h1 {
 h2 {
   font-size: 36px;
 }
+h2.book-title {
+  margin-top: 0;
+}
 .serif-font,
 .wrapper p {
   font-size: 17.2px;

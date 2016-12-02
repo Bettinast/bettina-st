@@ -5,9 +5,6 @@
   background-size: cover;
   /*box-shadow: -25px -25px 45px #BEBEBE;*/
 }
-.logo-white-landing {
-  margin-top: 30px;
-}
 .header-content {
   margin-top: 100px;
 }
@@ -59,15 +56,6 @@
 }
 .section-news {
   width: 100%;
-}
-.new-target {
-  background: url("{{site.baseurl}}/img/lancamento_target.png") no-repeat;
-  background-size: 100%;
-  width: 180px;
-  height: 180px;
-  position: absolute;
-  right: -20px;
-  top: -40px;
 }
 .section-news-item {
   position: relative;
