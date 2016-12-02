@@ -29,16 +29,10 @@ footer {
 .header-pages {
   background: #F3F7F8;
 }
-.header-content-pages {
-  padding: 30px;
-  text-align: center;
-  font-size: 31px;
-  font-weight: bold;
-}
 
 /* #Content */
 .page-content {
-  max-width: 1170px;
+  max-width: 1120px;
   margin: 100px auto 0 auto;
   position: relative;
   vertical-align: top;

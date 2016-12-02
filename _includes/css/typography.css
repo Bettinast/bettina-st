@@ -21,6 +21,14 @@ h2 {
 h2.book-title {
   margin-top: 0;
 }
+.header-content-pages {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 31px;
+}
+.header-content-pages h1 {
+  font-weight: 900;
+}
 .serif-font,
 .wrapper p {
   font-size: 17.2px;
