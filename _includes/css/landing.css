@@ -1,8 +1,9 @@
 .bg-landing-top {
   background: url("{{site.baseurl}}/img/bg_landing_top.jpg") no-repeat;
   width: 100%;
-  height: 80%;
+  min-height: 80%;
   background-size: cover;
+  /*box-shadow: -25px -25px 45px #BEBEBE;*/
 }
 .logo-white-landing {
   margin-top: 30px;
@@ -16,7 +17,7 @@
 }
 .header-sub-title {
   color: #fff;
-  max-width: 650px;
+  max-width: 47%;
   font-size: 18px;
   line-height: 28px;
 }
@@ -41,9 +42,46 @@
 }
 .midia-landing {
   padding: 0 0 180px 0;
+  text-align: center;
 }
 .midia-press,
 .midia-bookstores {
   display: inline-block;
-  width: 45%;
+  width: 44%;
+  margin: 20px;
+  text-align: left;
+}
+.midia-press img,
+.midia-bookstores img {
+  width: 40%;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.section-news {
+  width: 100%;
+}
+.new-target {
+  background: url("{{site.baseurl}}/img/lancamento_target.png") no-repeat;
+  background-size: 100%;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  right: -20px;
+  top: -40px;
+}
+.section-news-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 100px;
+}
+.section-news-description {
+  width: 47%;
+  margin-right: 10%;
+}
+.section-news-description-image {
+  width: 40%;
+}
+.section-news-description-image img {
+  width: 100%;
 }

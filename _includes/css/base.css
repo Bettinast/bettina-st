@@ -1,5 +1,16 @@
+img {
+  width: 100%;
+}
 a {
   color: #1006FF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
 }
 /* #Navegation*/
 .navegation-link-content {
@@ -21,13 +32,31 @@ a {
   text-decoration: underline;
 }
 
+/* #Images */
+.icon {
+  background: url("{{site.baseurl}}/img/b_sprite.png") no-repeat;
+  background: url("{{site.baseurl}}/img/b_sprite.svg") no-repeat;
+  display: inline-block;
+  position: relative;
+}
+.icon-arrow-right {
+  width: 22px;
+  height: 18px;
+  background-position: 0 0;
+  vertical-align: middle;
+}
+
 /* #Buttons */
+a.btn,
 .btn {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .9em;
   background: #1006FF;
   padding: 10px 20px;
   border: 0;
   color: #fff;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 2px;
   font-weight: 700;
   cursor: pointer;
@@ -38,6 +67,7 @@ a {
      -moz-border-radius: 50px;
           border-radius: 50px;
 }
+a.btn:hover,
 .btn:hover {
   background: #fff;
   color: #1006FF;
@@ -66,6 +96,7 @@ a {
 input {
   padding: 10.5px;
   border: 0;
+  outline: none;
 }
 input.footer-input {
   border: 0;

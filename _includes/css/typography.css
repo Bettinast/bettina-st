@@ -1,5 +1,14 @@
 /* Typography */
 
+::-moz-selection{
+  color:#fff;
+  background: #1006FF;
+}
+::selection {
+  color:#fff;
+  background: #1006FF;
+}
+
 /* #headline */
 h1 {
   font-family: 'Playfair Display', serif;
@@ -9,7 +18,9 @@ h1 {
 h2 {
   font-size: 36px;
 }
-.serif-font {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
+.serif-font,
+.wrapper p {
+  font-size: 17.2px;
+  line-height: 32px;
+  font-family: 'Braskervile', serif;
 }

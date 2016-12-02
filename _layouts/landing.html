@@ -8,6 +8,7 @@
             <a class="navegation-link" href="#">Sobre</a>
             <a class="navegation-link" href="#">Ficção</a>
             <a class="navegation-link" href="#">Infantil</a>
+            <a class="navegation-link" href="#">Livros</a>
             <a class="navegation-link" href="#">Blog</a>
             <a class="btn btn-white btn-white-landing" href="#">Comprar</a>
           </div>
@@ -26,12 +27,24 @@
       <div class="wrapper">
         {{ content }}
         <div class="page-content section-news">
-          <h2>
-            Lançamento
-          </h2>
-          <h2>
-            Livros
-          </h2>
+          <div class="section-news-item section-news-description">
+            <h2 class="new-book-title">
+              Cora a coruja que não sabia piar
+            </h2>
+            <p>
+              Este é o 4 livro de Bettina, um conto lindo com muita musica e aventura - Escrito em 2016, publicado em 2017...
+            </p>
+            <p>
+              Sinopse  - Cora não era burra. Para começo de conversa, cora era uma coru- ja e não um burro. Mas seus colegas de escola teimavam em dizer que a pequena coruja só faltava dar coices, pois empacada como um burro ela já era. Cora não se lembrava mais de quantas vezes saíra aos prantos da escola para se empoleirar com cara de emburrada no galho de alguma árvore. <a href="#"> Saber mais <span class="icon icon-arrow-right"></span></a>
+            </p>
+            <p>
+              <a href="#" class="btn">Comprar</a>
+            </p>
+          </div>
+          <div class="section-news-item section-news-description-image">
+            <div class="new-target"></div>
+            <img src="{{site.baseurl}}/img/landing-cora.png" />
+          </div>
         </div>
         <div class="section-divisor"></div>
         <div class="page-content midia-landing">
@@ -40,7 +53,15 @@
               Quem está falando
             </h2>
             <p>
-              <img src="{{site.baseurl}}/img/landing_press.png" alt="imprensa" />
+              <a href="" target="_blank">
+                <img src="{{site.baseurl}}/img/midia/midia_bookaholic_girls.png" />
+              </a>
+              <a href="" target="_blank">
+                <img src="{{site.baseurl}}/img/midia/midia_clube_da_leitura.png" />
+              </a>
+              <a href="" target="_blank">
+                <img src="{{site.baseurl}}/img/midia/midia_diario_de_jardineira.png" />
+              </a>
             </p>
           </div>
           <div class="midia-bookstores">
@@ -48,7 +69,15 @@
               Obras presente em
             </h2>
             <p>
-              <img src="{{site.baseurl}}/img/landing_bookstores.png" alt="livrarias" />
+              <a href="" target="_blank">
+                <img src="{{site.baseurl}}/img/midia/shop_livraria_cultura.png" alt="imprensa" />
+              </a>
+              <a href="" target="_blank">
+                <img src="{{site.baseurl}}/img/midia/shop_saraiva.png" alt="imprensa" />
+              </a>
+              <a href="" target="_blank">
+                <img src="{{site.baseurl}}/img/midia/shop_maravilha_livros.png" alt="imprensa" />
+              </a>
             </p>
           </div>
         </div>
@@ -70,5 +99,7 @@
       </div>
     </section>
     {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="{{site.baseurl}}/js/main.js"></script>
   </body>
 </html>
