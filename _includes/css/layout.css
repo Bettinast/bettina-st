@@ -38,6 +38,32 @@ footer {
   vertical-align: top;
 }
 
+/* #Modules - checkout */
+.book-infos-checkout-box {
+  width: 400px;
+  margin: 0 auto;
+  border: 5px solid #1D1D1D;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
+.book-infos-checkout-box-title {
+  text-align: center;
+  background: #1D1D1D;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+}
+.book-infos-checkout-box-content {
+  padding: 10px 40px 20px 40px;
+}
+.book-more-infos {
+  margin: 0 0 100px 0;
+  padding-top: 20px;
+  border-top: 4px solid #1d1d1d;
+}
+
 /* #Images */
 .logo {
   background: url("{{site.baseurl}}/img/logo.png") no-repeat;
@@ -92,10 +118,12 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-items: flex-start;
 }
 .flex-item {
   flex-grow: 1;
   flex-basis:1px;
+  line-height: 28px;
 }
 .footer .flex-item {
   text-align: center;
@@ -105,6 +133,9 @@ footer {
 .footer {
   color: #fff;
   background: #232323;
+}
+.footer .logo-white {
+  margin-top: 0 !important;
 }
 .footer-content {
   max-width: 1170px;
