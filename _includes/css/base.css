@@ -2,7 +2,8 @@ img {
   width: 100%;
 }
 a {
-  color: #1006FF;
+  /*color: #1006FF;*/
+  color: #E8B7A8;
   text-decoration: none;
   text-transform: uppercase;
   font-size: .8em;
@@ -21,6 +22,7 @@ a:hover {
 
 .navegation-landing .navegation-link {
   color: #1D1D1D;
+  font-weight: normal;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
@@ -62,7 +64,8 @@ a.btn,
 .btn {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: .9em;
-  background: #1006FF;
+  /*background: #1006FF;*/
+  background: #E8B7A8;
   padding: 10px 20px;
   border: 0;
   color: #fff;
@@ -81,14 +84,16 @@ a.btn,
 a.btn:hover,
 .btn:hover {
   background: #fff;
-  color: #1006FF;
+  /*color: #1006FF;*/
+  color: #E8B7A8;
 }
 .btn-white {
   background: #fff;
   color: #1006FF;
 }
 .btn-white:hover {
-  background: #1006FF;
+  /*background: #1006FF;*/
+  background: #E8B7A8;
   color: #fff;
 }
 .btn-white-landing {
@@ -105,7 +110,7 @@ a.btn:hover,
 }
 /* #Forms */
 input {
-  padding: 10.5px;
+  padding: 11px;
   border: 0;
   outline: none;
 }

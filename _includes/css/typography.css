@@ -10,6 +10,12 @@
 }
 
 /* #headline */
+h2,
+h3,
+h4,
+.title {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: normal;
@@ -21,12 +27,12 @@ h2 {
 h2.book-title {
   margin-top: 0;
 }
-.header-content-pages {
+.header-pages-title {
   padding: 40px 0;
   text-align: center;
   font-size: 31px;
 }
-.header-content-pages h1 {
+.header-pages-title h1 {
   font-weight: 900;
 }
 .serif-font,

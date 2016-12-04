@@ -22,14 +22,18 @@ footer {
 }
 
 /* #header */
-.header {
+.header,
+.header-pages-content {
   max-width: 1170px;
   margin: 0 auto;
+  position: relative;
+}
+.header-content {
+  margin-top: 15%;
 }
 .header-pages {
   background: #F3F7F8;
 }
-
 /* #Content */
 .page-content {
   max-width: 1120px;
@@ -37,6 +41,22 @@ footer {
   position: relative;
   vertical-align: top;
 }
+
+/* #Pages */
+.book-scrool {
+  width:100%;
+  overflow:hidden;
+  margin-top: 40px;
+}
+.book-scrool:hover{
+  cursor: url('{{site.baseurl}}/img/drag_arrow.png'), auto;
+  cursor: url('{{site.baseurl}}/img/drag_arrow.svg'), auto;
+}
+.book-scrool-content {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
 
 /* #Modules - checkout */
 .book-infos-checkout-box {
@@ -142,6 +162,7 @@ footer {
   margin: 0 auto;
   padding: 60px 0;
   font-size: .8em;
+  align-items: center;
 }
 .footer-navegation-content {
   width: 320px;

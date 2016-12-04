@@ -1,14 +1,15 @@
 {% include head.html %}
   <body>
     <header class="site-header bg-landing-top" role="banner">
-      <header class="header">
+      <div class="header">
         <div class="header-navegation navegation-landing">
           <a href="/" class="header-logo logo-white logo-white-landing"></a>
           <div class="navegation-link-content">
-            <a class="navegation-link text-white" href="#">Sobre</a>
+            <a class="navegation-link text-white" href="/sobre">Sobre</a>
             <a class="navegation-link text-white" href="#">Ficção</a>
-            <a class="navegation-link text-white" href="#">Infantil</a>
-            <a class="navegation-link text-white" href="/livros-infantil">Livros</a>
+            <a class="navegation-link text-white" href="/livros-infantil">
+              Literatura Infantil
+            </a>
             <a class="navegation-link text-white" href="#">Blog</a>
             <a class="btn btn-white btn-white-landing" href="#">Comprar</a>
           </div>
@@ -21,7 +22,7 @@
             Em seu íntimo sabia que um dia estaria a correr livremente por um lugar só seu, em que poderia ser só ela, mas não ela só - concluíra que a solidão não é um estado físico, mas sim de espírito. Na sua imaginação fértil de menina, seria como calçar finalmente os sapatos certos, depois de anos de calos e dores lancinantes nas solas dos pés. Então ela desfez as amarras, levantou âncora e içou as velas
           </p>
         </div>
-      </header>
+      </div>
     </header>
     <section>
       <div class="wrapper">
@@ -43,11 +44,26 @@
           </div>
           <div class="section-news-item section-news-description-image">
             <div class="new-target"></div>
-            <img src="{{site.baseurl}}/img/landing-cora.png" />
+            <img src="{{site.baseurl}}/img/books/livro_cora_a_coruda_que_nao_sabia_piar.png" />
           </div>
         </div>
         <div class="section-divisor"></div>
-        <div class="page-content midia-landing">
+        <div class="landing-about">
+          <div class="page-content landing-about-content">
+            <div class="landing-about-description">
+              <h2>
+                Ler é aprender
+              </h2>
+              <p class="serif-font">
+                Ler é ter espírito aventureiro, é desbravar o desconhecido e não ter medo de aprender.
+              </p>
+              <p>
+                {{ site.author }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="midia-landing">
           <div class="midia-press">
             <h2>
               Quem está falando
@@ -79,21 +95,6 @@
                 <img src="{{site.baseurl}}/img/midia/shop_maravilha_livros.png" alt="imprensa" />
               </a>
             </p>
-          </div>
-        </div>
-        <div class="landing-about">
-          <div class="page-content landing-about-content">
-            <div class="landing-about-description">
-              <h2>
-                Ler é aprender
-              </h2>
-              <p class="serif-font">
-                Ler é ter espírito aventureiro, é desbravar o desconhecido e não ter medo de aprender.
-              </p>
-              <p>
-                {{ site.author }}
-              </p>
-            </div>
           </div>
         </div>
       </div>
