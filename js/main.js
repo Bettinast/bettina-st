@@ -26,14 +26,9 @@ $(document).ready(function(){
       });
   });
 
-  // $(".book-scrool").draggable({
-  //   scroll:true,
-  //   start: function(){
-  //     $(this).data("startingScrollTop",$(this).parent().scrollTop());
-  //   },
-  //   drag: function(event,ui){
-  //     var st = parseInt($(this).data("startingScrollTop"));
-  //     ui.position.top -= $(this).parent().scrollTop() - st;
-  //   }
-  // });
-});
+  $.getScript("../js/jquery-ui.min.js", function(){
+    $(".book-scrool-content img").draggable({
+      axis: "x"
+    });
+  });
+});//wrapper end
