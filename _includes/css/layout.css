@@ -124,6 +124,26 @@ footer {
   background-size: cover;
 }
 
+.magic-square {
+  width: 440px;
+  height: 320px;
+  border: 8px solid #B09263;
+  position: absolute;
+  z-index: -1;
+  right: 200px;
+  top: -40px;
+}
+
+.magic-square-left {
+  width: 400px;
+  height: 300px;
+  border: 8px solid #B09263;
+  position: absolute;
+  z-index: -1;
+  left: -40px;
+  top: -40px;
+}
+
 /* #Bettina-Grid */
 .bet-grid {
   width: 100%;

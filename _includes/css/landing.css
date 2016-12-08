@@ -29,6 +29,11 @@ body {
   display: table;
   background-size: cover;
 }
+.landing-about-title {
+  font-size: 102px;
+  margin-bottom: 80px;
+  line-height: 52px;
+}
 .landing-about-content {
   display: table-cell;
   height: 200px;
@@ -43,13 +48,21 @@ body {
 }
 .midia-landing {
   width: 90%;
+  margin: -100px auto -80px auto;
+  padding: 180px 20px 180px 20px;
+  text-align: center;
+  border: 8px solid #B09263;
+  z-index: 100;
+  position: relative;
+  z-index: 0;
+  /*width: 90%;
   margin: 100px auto;
   background: #F3F7F8;
   padding: 100px 20px;
   text-align: center;
   -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
-          border-radius: 20px;
+          border-radius: 20px;*/
 }
 .midia-press,
 .midia-bookstores {
