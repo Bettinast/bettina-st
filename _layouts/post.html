@@ -1,12 +1,18 @@
-<!-- {% include head.html %}
+{% include head.html %}
   <body>
     {% include header_page.html %}
-    post
+    <style>
+      {% include css/blog.css %}
+    </style>
     <section>
-      <div class="wrapper">
+      <div class="wrapper-post">
+        {{ page.date | date_to_string }}
+        <h2>{{page.title}}</h2>
         {{ content }}
       </div>
     </section>
     {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="{{site.baseurl}}/js/main.js"></script>
   </body>
-</html> -->
+</html>

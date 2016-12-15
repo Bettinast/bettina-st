@@ -8,9 +8,10 @@ html, body {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #232323;
+  /*color: #232323;*/
   font-weight: 300;
   letter-spacing: 1px;
+  color: rgba(0,0,0,.8);
 }
 
 /* #content */

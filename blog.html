@@ -2,10 +2,13 @@
 layout: page
 title: Blog
 ---
-<div class="page-content">
+<style>
+  {% include css/blog.css %}
+</style>
+<div class="page-content page-content-blog">
   {% for post in site.posts %}
-    <div class="blog-post-content">
-      <p>Publicado em:</p>
+    <div class="blog-post-item">
+      <p class="blog-post-item-date">Publicado em: {{ page.date }}</p>
       <a href="{{site.baseurl}}{{post.url}}">
         <h2>
           {{post.title}}
