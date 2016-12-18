@@ -1,5 +1,5 @@
 img { width: 100%; }
-figure { margin:0; padding:0; }
+figure, time { margin:0; padding:0; }
 a {
   /*color: #1006FF;*/
   color: #B09263;
