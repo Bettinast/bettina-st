@@ -6,6 +6,7 @@
     </style>
     <section>
       <div class="wrapper-post">
+        <a class="back-blog" href="{{site.baseurl}}/blog">← Voltar</a>
         <time class="blog-post-date">{{ page.date | date_to_string | replace:"Jan","Jan" | replace:"Feb","Fev" | replace:"Mar","Mar" | replace:"Apr","Abr" | replace:"May","Mai" | replace:"Jun","Jun" | replace:"Jul","Jul" | replace:"Aug","Ago" | replace:"Sep","Set" | replace:"Oct","Out" | replace:"Nov","Nov" | replace:"Dec","Dez"}}</time>
         <h2 class="blog-post-title">{{page.title}}</h2>
         {{ content }}

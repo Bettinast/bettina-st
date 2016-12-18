@@ -64,3 +64,11 @@ h2:hover {
   margin-right: -14%;
   margin-bottom: 40px;
 }
+.back-blog {
+  position: relative;
+  display: block;
+  margin-left: -14%;
+  margin-right: -14%;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
