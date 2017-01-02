@@ -50,11 +50,11 @@ h2:hover {
 .wrapper-post article {
   max-width: 700px;
   margin: 50px auto;
-  font-family: 'Braskervile', serif;
+  font-family: braskervile, cambria,"Times New Roman",Times, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 21px;
-  line-height: 1.58;
+  font-size: 22px;
+  line-height: 1.72;
   letter-spacing: -.003em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
