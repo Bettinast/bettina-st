@@ -15,5 +15,11 @@
     {% include footer.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="{{site.baseurl}}/js/main.js"></script>
+    <script src="{{site.baseurl}}/js/zoom.min.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $('img').attr('data-action','zoom');
+      });
+    </script>
   </body>
 </html>
