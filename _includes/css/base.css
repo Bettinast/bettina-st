@@ -37,8 +37,8 @@ a:hover {
 
 /* #Images */
 .icon {
-  background: url("{{site.baseurl}}/img/b_sprite.png") no-repeat;
-  background: url("{{site.baseurl}}/img/b_sprite.svg") no-repeat;
+  background: url("/img/b_sprite.png") no-repeat;
+  background: url("/img/b_sprite.svg") no-repeat;
   display: inline-block;
   position: relative;
 }
@@ -59,7 +59,7 @@ a:hover {
   vertical-align: middle;
 }
 .new-target {
-  background: url("{{site.baseurl}}/img/lancamento_target.png") no-repeat;
+  background: url("/img/lancamento_target.png") no-repeat;
   background-size: 100%;
   width: 180px;
   height: 180px;
