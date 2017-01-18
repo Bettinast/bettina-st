@@ -1,38 +1,72 @@
-@media only screen and (max-width:720px){
-  .header-logo {
-    margin: 20px auto;
+@media only screen and (max-width:940px){
+  /*Navegation*/
+  .navegation-landing .navegation-link {
     display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .btn-white-landing {
+    display: none;
+  }
+  .header-navegation {
+    padding-top: 10px;
+  }
+  /*landing*/
+  .header-logo {
+    margin: 20px auto !important;
+    display: block !important;
   }
   .navegation-link-content {
-    display: block;
-    position: relative;
-    top: 0;
+    display: block !important;
+    position: relative !important;
+    top: 0 !important;
   }
   .header-content {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
+    display: block !important;
+    width: 90% !important;
+    margin: 0 auto !important;
   }
   .header-sub-title{
     width: 100% !important;
     max-width: 100% !important;
   }
   .section-news-item {
-    display: block;
+    display: block !important;
   }
   .section-news-description {
-    width: 90%;
-    margin: 0 auto;
+    width: 90% !important;
+    margin: 0 auto !important;
   }
   .landing-about {
     width: 100%;
     height: auto !important;
+  }
+  .landing-about-description {
+    width: 100%;
+  }
+  .landing-about-title {
+    font-size: 62px;
+    margin-bottom: 40px;
   }
   .midia-landing {
     width: 100% !important;
     margin: 0 auto !important;
     padding: 0 !important;
   }
+  /*Pages*/
+  .page-content {
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  /* Grid */
+  .bet-2-col {
+    width: 100%;
+    display: block;
+    padding: 0;
+    position: relative;
+  }
+
   /*Footer*/
   .flex-content {
     display: block;
