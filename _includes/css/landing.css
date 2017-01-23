@@ -93,9 +93,10 @@ body {
 }
 .section-news-description-image {
   width: 40%;
+  text-align: center;
 }
 .section-news-description-image img {
-  width: 100%;
+  width: 90%;
 }
 .book-scrool {
   margin-top: -10px;
