@@ -97,3 +97,6 @@ body {
 .section-news-description-image img {
   width: 100%;
 }
+.book-scrool {
+  margin-top: -10px;
+}
