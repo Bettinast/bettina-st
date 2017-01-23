@@ -8,3 +8,4 @@
 {% include css/typography.css %}
 {% include css/form.css %}
 {% include css/midia_queries.css %}
+{% include css/payment.css %}

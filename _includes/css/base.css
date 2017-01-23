@@ -92,6 +92,7 @@ a.btn,
   padding: 10px 20px;
   border: 0;
   color: #fff;
+  outline: none;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
