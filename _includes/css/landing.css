@@ -8,6 +8,7 @@ body {
   background-size: cover;
   position: relative;
   display: flex;
+  background-position: 0 0;
   /*box-shadow: -25px -25px 45px #BEBEBE;*/
 }
 .header-title {
