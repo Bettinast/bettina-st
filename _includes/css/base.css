@@ -131,17 +131,3 @@ a.btn:hover,
   right: 50px;
   display: none;
 }
-
-/* #Forms */
-input {
-  padding: 11px;
-  border: 0;
-  outline: none;
-}
-input.footer-input {
-  border: 0;
-  width: 41%;
-  -webkit-border-radius: 50px 0 50px 0;
-     -moz-border-radius: 50px 0 0 50px;
-          border-radius: 50px 0 0 50px;
-}
