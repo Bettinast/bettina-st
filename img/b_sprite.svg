@@ -34,10 +34,10 @@
                     <polygon id="Fill-21" fill="#5A6675" mask="url(#mask-2)" points="0 13.0107527 50.8181818 13.0107527 50.8181818 7.68817204 0 7.68817204"></polygon>
                 </g>
             </g>
-            <g id="Group-2" transform="translate(3.000000, 74.000000)" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round">
-                <path d="M0,1 L34.0147027,1" id="Line"></path>
-                <path d="M0,9 L34.0147027,9" id="Line-Copy"></path>
-                <path d="M0,17 L34.0147027,17" id="Line-Copy-2"></path>
+            <g id="Group-2" transform="translate(3.000000, 74.000000)" stroke="#1D1D1D" stroke-width="3" stroke-linecap="round">
+                <path d="M0,1.5 L28.6923128,1.5" id="Line"></path>
+                <path d="M0,9.5 L28.6923128,9.5" id="Line-Copy"></path>
+                <path d="M0,17.5 L28.6923128,17.5" id="Line-Copy-2"></path>
             </g>
         </g>
     </g>
