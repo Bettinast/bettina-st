@@ -76,7 +76,9 @@ footer {
   margin: 0;
 }
 .book-infos-checkout-box-content {
-  padding: 10px 40px 20px 40px;
+  padding: 10px 0 20px 0;
+  width: 80%;
+  margin: 0 auto;
 }
 .book-more-infos {
   margin: 0 0 100px 0;
