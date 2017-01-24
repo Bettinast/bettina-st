@@ -133,7 +133,7 @@
 
 @media only screen and (max-width:420px){
   .bg-landing-top {
-    background-position: -660px 0 !important;
+    background-position: -500px 0 !important;
   }
   .header-logo {
     display: none !important;
@@ -149,7 +149,7 @@
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 7px;
+    top: 9px;
     left: 10px;
   }
   .mobile-navegation {
