@@ -57,6 +57,39 @@ footer {
   overflow-x: scroll;
   white-space: nowrap;
 }
+.cart-page {
+  width: 90%;
+  margin: 0 auto;
+}
+/* payment */
+.cart-page .cart-box {
+  vertical-align: top;
+  width: 45%;
+  display: inline-block;
+  background: #F3F7F8;
+  padding: 20px 40px;
+  margin: 20px;
+}
+.cart-data-infos-image {
+  vertical-align: top;
+  width: 25%;
+  display: inline-block;
+}
+.cart-data-infos-content {
+  vertical-align: top;
+  width: 70%;
+  margin-left: 20px;
+  display: inline-block;
+}
+.form-small-row {
+  width: 100%;
+  position: relative;
+  vertical-align: top;
+}
+.form-small-row-item {
+  display: inline-block;
+  margin-right: 20px;
+}
 
 /* #Modules - checkout */
 .book-infos-checkout-box {
