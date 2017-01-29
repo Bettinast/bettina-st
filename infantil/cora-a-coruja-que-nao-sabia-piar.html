@@ -40,17 +40,22 @@ book: Cora a coruja que não sabia piar
             <label for="">Seu Nome</label>
             <input class="payment-input" type="text" name="" value="" tabindex="1">
 
-            <label for="">Endereço</label>
+            <label for="">Email para contato</label>
+            <input class="payment-input" type="text" name="" value="" tabindex="3">
+
+            <label for="">Endereço para receber o livro</label>
             <input class="payment-input" type="text" name="" value="" tabindex="2">
 
-            <label for="">Numero</label>
+            <label for="">Número</label>
             <input class="payment-input" type="text" name="" value="" tabindex="3">
 
             <label for="">CEP</label>
             <input class="payment-input" type="text" name="" value="" tabindex="4">
 
             <label for="complement">Complemento</label>
-            <input class="payment-input" type="text" name="complement" id="complement" value="" tabindex="5">
+            <input class="payment-input" type="text" name="" tabindex="4">
+
+            <input class="payment-input payment-book-name" type="text" name="payment-book-name" id="paymentBookName" value="{{page.book}}" tabindex="5" style="display:none;">
 
             <h4>Dados do pagamento</h4>
             <form id="payment-form" target="_blank" action="" method="POST">
