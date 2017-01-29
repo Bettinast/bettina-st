@@ -1,0 +1,127 @@
+{% include head.html %}
+  <body>
+    <header class="site-header header-pages" role="banner">
+      <div class="header-pages-content">
+        <div class="mobile-navegation">
+          <a href="/" class="mobile-navegation-logo logo"></a>
+          <a href="#" class="icon icon-hamburguer-menu"></a>
+        </div>
+        <div class="header-navegation navegation-landing">
+          <a href="/" class="header-logo logo"></a>
+          <div class="navegation-link-content">
+            <a class="navegation-link" href="{{page.backlink}}">« Voltar</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="wrapper page cart-page">
+        <div class="cart-box cart-page-shipping">
+          <h3>1 - Dados para entrega</h3>
+          Complete todos os campos ok? Assim garantimos que o seu  <b>{{page.book}}</b>, chege certinho ao seu endereço
+          <br>
+          <form id="input-form-shiping" action="" method="POST" target="no-target">
+            <label for="">Seu Nome</label>
+            <input id="input-q1" class="payment-input" type="text" name="" value="" tabindex="1">
+
+            <label for="">Email para contato</label>
+            <input id="input-q8" class="payment-input" type="text" name="q8" value="" tabindex="2">
+
+            <label for="">Endereço</label>
+            <input id="input-q2" class="payment-input" type="text" name="" value="" tabindex="2">
+
+            <div class="form-small-row">
+              <div class="form-small-row-item">
+                <label for="">Número</label>
+                <input id="input-q3" class="payment-input" type="text" name="" value="" tabindex="3">
+              </div>
+
+              <div class="form-small-row-item">
+                <label for="">CEP</label>
+                <input id="input-q4" class="payment-input" type="text" name="" value="" tabindex="4">
+              </div>
+            </div>
+
+            <label for="complement">Complemento</label>
+            <input id="input-q5" class="payment-input" type="text" name="complement" value="" tabindex="5">
+
+            <input id="input-q6" placeholder="nome do livro" style="display:none;" name="q6" value="{{page.book}}">
+            <input id="input-q7" placeholder="sp" style="display:none;" name="q7">
+            <input type="hidden" name="fvv" value="1"><input type="hidden" name="draftResponse" value="[,,&quot;7671967752946958588&quot;]
+            "><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="7671967752946958588">
+            <p>
+              <button class="btn" id="form-submit" type="submit">
+                Continuar
+              </button>
+            </p>
+          </form>
+
+          <p id="input-feedback"></p>
+
+          <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+        </div>
+        <div class="cart-box cart-data">
+          <h3> 2 - Pagamento </h3>
+          <div class="cart-data-infos">
+            <img class="cart-data-infos-image" src="{{page.thumb}}" alt="">
+            <div class="cart-data-infos-content">
+              <div class="book-infos-price">
+                R${{page.price}},00
+              </div>
+              Frete Grátis
+              <br>
+              <ul>
+                <li>{{page.book}}</li>
+                <li>Frete grátis</li>
+              </ul>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+        {{ content }}
+      </div>
+    </section>
+    {% include footer.html %}
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('#input-form-shiping').one('submit',function(){
+        //reverse captcha
+        var sp = $('#input-q7').val();
+        if (sp == "") {
+          //send form
+          var inputq1 = encodeURIComponent($('#input-q1').val());
+          var inputq2 = encodeURIComponent($('#input-q2').val());
+          var inputq3 = encodeURIComponent($('#input-q3').val());
+          var inputq4 = encodeURIComponent($('#input-q4').val());
+          var inputq5 = encodeURIComponent($('#input-q5').val());
+          var inputq6 = encodeURIComponent($('#input-q6').val());
+          var inputq7 = encodeURIComponent($('#input-q7').val());
+          var inputq8 = encodeURIComponent($('#input-q8').val());
+          var q1ID = "entry.2129248737";
+          var q2ID = "entry.1515862082";
+          var q3ID = "entry.865173911";
+          var q4ID = "entry.1517329504";
+          var q5ID = "entry.1664080007";
+          var q6ID = "entry.133297670";
+          var q7ID = "entry.390512294";
+          var q8ID = "entry.1776115297";
+          var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSffw9U9clzcP3QEP0GeWC3EL8mZyA9XhBiPgvMcGKd7kcAJSQ/formResponse?';
+          var submitRef = '&submit=Submit';
+          var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + "&" + q5ID + "=" + inputq5 + "&" + q6ID + "=" + inputq6 + "&" + q7ID + "=" + inputq7 + "&" + q8ID + "=" + inputq8 + submitRef);
+          console.log(submitURL);
+          $(this)[0].action=submitURL;
+          $('#input-feedback').text('Thank You!');
+        } else {
+          console.log("reverse captcha activated");
+          return false;
+        }
+      });
+    });
+    </script>
+    <script src="/js/checkout.js"></script>
+  </body>
+</html>

@@ -129,6 +129,16 @@
   .page-content-blog {
     padding: 0 20px;
   }
+
+  /* payment */
+  .cart-page {
+    width: 100%;
+  }
+  .cart-page .cart-box {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width:420px){
