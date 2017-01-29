@@ -137,11 +137,14 @@
   .cart-page .cart-box {
     width: 100%;
     display: block;
-    margin: 0;
+    margin: 20px 0;
   }
 }
 
 @media only screen and (max-width:420px){
+  .cart-data-infos-content {
+    width: 60% !important;
+  }
   .bg-landing-top {
     background-position: -500px 0 !important;
   }
