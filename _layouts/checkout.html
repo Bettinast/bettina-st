@@ -16,6 +16,9 @@
     </header>
     <section>
       <div class="wrapper page cart-page">
+        <h5 class="cart-page-breadcrumbs">
+          <a class="navegation-link" href="{{page.backlink}}">{{page.book}}</a> » 1. Dados para a compra » 2. Pagamento » 3. Felicidade!
+        </h5>
         <div class="cart-box cart-page-shipping">
           <h3>1 - Dados para entrega</h3>
           Complete todos os campos ok? Assim garantimos que o seu  <b>{{page.book}}</b>, chege certinho ao seu endereço
@@ -57,6 +60,7 @@
           </form>
         </div>
         <div class="cart-box cart-data">
+          <div id="input-feedback"></div>
           <h3> 2 - Pagamento </h3>
           <div class="cart-data-infos">
             <img class="cart-data-infos-image" src="{{page.thumb}}" alt="">
@@ -73,8 +77,12 @@
             </div>
           </div>
 
-
-
+          <h3> Dados do cartão: </h3>
+          <ul class="card-flags">
+            <li class="icon flag-cards flag-master"></li>
+            <li class="icon flag-cards flag-visa"></li>
+            <li class="icon flag-cards flag-amex"></li>
+          </ul>
           <form id="payment-form" target="_blank" action="http://avelar-dashboardpitzi.rhcloud.com/orders/dd0a54c40de33ebe1baf59ca7f7eaddd/token-que-vamos-gerar-pelo-iugu-js" method="POST">
               <div class="usable-creditcard-form">
                 <div class="wrapper">
@@ -111,10 +119,7 @@
               </div>
             </form>
         </div>
-
         {{ content }}
-        <p id="input-feedback"></p>
-
         <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
       </div>
     </section>
@@ -148,7 +153,10 @@
           var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + "&" + q5ID + "=" + inputq5 + "&" + q6ID + "=" + inputq6 + "&" + q7ID + "=" + inputq7 + "&" + q8ID + "=" + inputq8 + submitRef);
           console.log(submitURL);
           $(this)[0].action=submitURL;
-          $('#input-feedback').text('Thank You!');
+
+          $(".cart-page-shipping").addClass('opacity');
+          $(".cart-data").css('display', 'inline-block');
+          $("#input-feedback").html('Ótimo, dados para entrega recebidos, agora vamos finalizar:');
         } else {
           console.log("reverse captcha activated");
           return false;
