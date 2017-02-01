@@ -8,11 +8,10 @@
   width: 45%;
   display: inline-block;
   background: #F3F7F8;
-  padding: 10px 40px;
   margin: 20px;
 }
-.cart-data {
-  display: none;
+.cart-box-content-padding {
+  padding: 20px 40px;
 }
 .cart-data-infos-image {
   vertical-align: top;

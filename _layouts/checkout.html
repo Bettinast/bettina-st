@@ -17,107 +17,115 @@
     <section>
       <div class="wrapper page cart-page">
         <h5 class="cart-page-breadcrumbs">
-          <a class="navegation-link" href="{{page.backlink}}">{{page.book}}</a> » 1. Dados para a compra » 2. Pagamento » 3. Felicidade!
+          <a class="navegation-link" href="{{page.backlink}}">{{page.book}}</a> » 1. Dados para entrega » 2. Pagamento » 3. Felicidade!
         </h5>
-        <div class="cart-box cart-page-shipping">
-          <h3>1 - Dados para entrega</h3>
-          Complete todos os campos ok? Assim garantimos que o seu  <b>{{page.book}}</b>, chege certinho ao seu endereço
-          <br>
-          <form id="input-form-shiping" action="" method="POST" target="no-target">
-            <label for="">Seu Nome</label>
-            <input id="input-q1" class="payment-input" type="text" name="" value="" tabindex="1">
+        <div class="cart-box cart-page-shipping cart-data book-infos-checkout-box">
+          <h3 class="book-infos-checkout-box-title">
+            1 - Informe os dados para entrega
+          </h3>
+          <div class="cart-box-content-padding">
+            Complete todos os campos ok? Assim garantimos que o seu  <b>{{page.book}}</b>, chege certinho ao seu endereço
+            <br>
+            <form id="input-form-shiping" action="" method="POST" target="no-target">
+              <label for="">Seu Nome</label>
+              <input id="input-q1" class="payment-input" type="text" name="" value="" tabindex="1">
 
-            <label for="">Email para contato</label>
-            <input id="input-q8" class="payment-input" type="text" name="q8" value="" tabindex="2">
+              <label for="">Email para contato</label>
+              <input id="input-q8" class="payment-input" type="text" name="q8" value="" tabindex="2">
 
-            <label for="">Endereço</label>
-            <input id="input-q2" class="payment-input" type="text" name="" value="" tabindex="2">
+              <label for="">Endereço</label>
+              <input id="input-q2" class="payment-input" type="text" name="" value="" tabindex="2">
 
-            <div class="form-small-row">
-              <div class="form-small-row-item">
-                <label for="">Número</label>
-                <input id="input-q3" class="payment-input" type="text" name="" value="" tabindex="3">
-              </div>
-
-              <div class="form-small-row-item">
-                <label for="">CEP</label>
-                <input id="input-q4" class="payment-input" type="text" name="" value="" tabindex="4">
-              </div>
-            </div>
-
-            <label for="complement">Complemento</label>
-            <input id="input-q5" class="payment-input" type="text" name="complement" value="" tabindex="5">
-
-            <input id="input-q6" placeholder="nome do livro" style="display:none;" name="q6" value="{{page.book}}">
-            <input id="input-q7" placeholder="sp" style="display:none;" name="q7">
-            <input type="hidden" name="fvv" value="1"><input type="hidden" name="draftResponse" value="[,,&quot;7671967752946958588&quot;]
-            "><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="7671967752946958588">
-            <p>
-              <button class="btn" id="form-submit" type="submit">
-                Continuar
-              </button>
-            </p>
-          </form>
-        </div>
-        <div class="cart-box cart-data">
-          <div id="input-feedback"></div>
-          <h3> 2 - Pagamento </h3>
-          <div class="cart-data-infos">
-            <img class="cart-data-infos-image" src="{{page.thumb}}" alt="">
-            <div class="cart-data-infos-content">
-              <div class="book-infos-price">
-                R${{page.price}},00
-              </div>
-              Frete Grátis
-              <br>
-              <ul>
-                <li>{{page.book}}</li>
-                <li>Frete grátis</li>
-              </ul>
-            </div>
-          </div>
-
-          <h3> Dados do cartão: </h3>
-          <ul class="card-flags">
-            <li class="icon flag-cards flag-master"></li>
-            <li class="icon flag-cards flag-visa"></li>
-            <li class="icon flag-cards flag-amex"></li>
-          </ul>
-          <form id="payment-form" target="_blank" action="#" method="POST">
-              <div class="usable-creditcard-form">
-                <div class="wrapper">
-                  <div class="input-group nmb_a">
-                    <div class="icon ccic-brand"></div>
-                      <input autocomplete="off" class="credit_card_number" data-iugu="number" placeholder="Número do Cartão" type="text" value="" />
-                    </div>
-                  <div class="input-group nmb_b">
-                    <div class="icon ccic-cvv"></div>
-                      <input autocomplete="off" class="credit_card_cvv" data-iugu="verification_value" placeholder="CVV" type="text" value="" />
-                  </div>
-                  <div class="input-group nmb_c">
-                    <div class="icon ccic-name"></div>
-                      <input class="credit_card_name" data-iugu="full_name" placeholder="Titular do Cartão" type="text" value="" />
-                  </div>
-                  <div class="input-group nmb_d">
-                    <div class="icon ccic-exp"></div>
-                      <input autocomplete="off" class="credit_card_expiration" data-iugu="expiration" placeholder="MM/AA" type="text" value="" />
-                  </div>
+              <div class="form-small-row">
+                <div class="form-small-row-item">
+                  <label for="">Número</label>
+                  <input id="input-q3" class="payment-input" type="text" name="" value="" tabindex="3">
                 </div>
-                <div class="footer">
-                  <img src="http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/cc-icons.e8f4c6b4db3cc0869fa93ad535acbfe7.png" alt="Visa, Master, Diners. Amex" border="0" />
-                  <a class="iugu-btn" href="http://iugu.com" tabindex="-1"><img src="http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/payments-by-iugu.1df7caaf6958f1b5774579fa807b5e7f.png" alt="Pagamentos por Iugu" border="0" /></a>
+
+                <div class="form-small-row-item">
+                  <label for="">CEP</label>
+                  <input id="input-q4" class="payment-input" type="text" name="" value="" tabindex="4">
                 </div>
               </div>
 
-              <div class="token-area">
-                  <label for="token">Token do Cartão de Crédito - Enviar para seu Servidor</label>
-                  <input type="text" name="token" id="token" value="" readonly="true" size="64" style="text-align:center" />
-              </div>
+              <label for="complement">Complemento</label>
+              <input id="input-q5" class="payment-input" type="text" name="complement" value="" tabindex="5">
 
-              <div>
-                <button class="btn" type="submit">Finalizar compra</button>
-              </div>
+              <input id="input-q6" placeholder="nome do livro" style="display:none;" name="q6" value="{{page.book}}">
+              <input id="input-q7" placeholder="sp" style="display:none;" name="q7">
+              <input type="hidden" name="fvv" value="1"><input type="hidden" name="draftResponse" value="[,,&quot;7671967752946958588&quot;]
+              "><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="7671967752946958588">
+              <p>
+                <button style="display:none;" class="btn bnt-submit-google-form" id="form-submit" type="submit">
+                  Continuar
+                </button>
+              </p>
             </form>
+          </div>
+        </div>
+        <div class="cart-box cart-data book-infos-checkout-box">
+          <div id="input-feedback"></div>
+          <h3 class="book-infos-checkout-box-title">
+            2 - Pagamento
+          </h3>
+          <div class="cart-box-content-padding">
+            <div class="cart-data-infos">
+              <img class="cart-data-infos-image" src="{{page.thumb}}" alt="">
+              <div class="cart-data-infos-content">
+                <div class="book-infos-price">
+                  R${{page.price}},{{page.cents}}
+                </div>
+                Frete Grátis
+                <br>
+                <ul>
+                  <li>{{page.book}}</li>
+                  <li>Frete grátis</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3> Dados do cartão: </h3>
+            <ul class="card-flags">
+              <li class="icon flag-cards flag-master"></li>
+              <li class="icon flag-cards flag-visa"></li>
+              <li class="icon flag-cards flag-amex"></li>
+            </ul>
+            <form id="payment-form" target="_blank" action="#" method="POST">
+                <div class="usable-creditcard-form">
+                  <div class="wrapper">
+                    <div class="input-group nmb_a">
+                      <div class="icon ccic-brand"></div>
+                        <input autocomplete="off" class="credit_card_number" data-iugu="number" placeholder="Número do Cartão" type="text" value="" />
+                      </div>
+                    <div class="input-group nmb_b">
+                      <div class="icon ccic-cvv"></div>
+                        <input autocomplete="off" class="credit_card_cvv" data-iugu="verification_value" placeholder="CVV" type="text" value="" />
+                    </div>
+                    <div class="input-group nmb_c">
+                      <div class="icon ccic-name"></div>
+                        <input class="credit_card_name" data-iugu="full_name" placeholder="Titular do Cartão" type="text" value="" />
+                    </div>
+                    <div class="input-group nmb_d">
+                      <div class="icon ccic-exp"></div>
+                        <input autocomplete="off" class="credit_card_expiration" data-iugu="expiration" placeholder="MM/AA" type="text" value="" />
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <img src="http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/cc-icons.e8f4c6b4db3cc0869fa93ad535acbfe7.png" alt="Visa, Master, Diners. Amex" border="0" />
+                    <a class="iugu-btn" href="http://iugu.com" tabindex="-1"><img src="http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/payments-by-iugu.1df7caaf6958f1b5774579fa807b5e7f.png" alt="Pagamentos por Iugu" border="0" /></a>
+                  </div>
+                </div>
+
+                <div class="token-area">
+                    <label for="token">Token do Cartão de Crédito - Enviar para seu Servidor</label>
+                    <input type="text" name="token" id="token" value="" readonly="true" size="64" style="text-align:center" />
+                </div>
+
+                <div>
+                  <button class="btn bnt-submit-google-form" type="submit">Finalizar compra</button>
+                </div>
+              </form>
+            </div>
         </div>
         <p class="payment-footer">
           <i class="icon flag-secure"></i> Site seguro. Caso precise de ajuda escreva para: <a id="bettina_contato" href="mailto:bettina.escritora@gmail.com">bettina.escritora@gmail.com</a>
@@ -130,6 +138,9 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript">
     $(document).ready(function(){
+      $(".bnt-submit-google-form").on("click", function() {
+        $('#input-form-shiping').submit();
+      });
       $('#input-form-shiping').one('submit',function(){
         //reverse captcha
         var sp = $('#input-q7').val();
@@ -156,10 +167,6 @@
           var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + "&" + q5ID + "=" + inputq5 + "&" + q6ID + "=" + inputq6 + "&" + q7ID + "=" + inputq7 + "&" + q8ID + "=" + inputq8 + submitRef);
           console.log(submitURL);
           $(this)[0].action=submitURL;
-
-          $(".cart-page-shipping").addClass('opacity');
-          $(".cart-data").css('display', 'inline-block');
-          $("#input-feedback").html('Ótimo, dados para entrega recebidos, agora vamos finalizar:');
         } else {
           console.log("reverse captcha activated");
           return false;
