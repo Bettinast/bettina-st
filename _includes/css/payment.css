@@ -2,32 +2,76 @@
 #payment-form {
   margin-bottom: 20px;
 }
-.opacity { opacity: 0.5}
+.cart-page {
+  width: 80%;
+  margin: 0 auto;
+}
 .cart-box {
-  vertical-align: top;
-  width: 45%;
-  display: inline-block;
+  flex-shrink: 1;
   background: #F3F7F8;
-  margin: 20px;
+  width: 100%;
+}
+.checkout-cart {
+  background-position: 0 -305px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 8px;
+}
+.free-shipping {
+  background-position: 0 -308px;
+  background-size: 100%;
+  width: 50px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.book-infos-checkout-box-title {
+  text-align: left;
+  padding-left: 40px;
+}
+.book-infos {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid #1D1D1D;
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
+.cart-page-shipping {
+  margin-right: 10px;
 }
 .cart-box-content-padding {
-  padding: 20px 40px;
+  padding: 20px 30px;
 }
 .cart-data-infos-image {
   vertical-align: top;
   width: 25%;
+  margin-right: 20px;
   display: inline-block;
 }
 .cart-data-infos-content {
   vertical-align: top;
   width: 70%;
-  margin-left: 20px;
+  display: inline-block;
+}
+.checkout-title {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+  padding: 0 ;
   display: inline-block;
 }
 .cart-page-breadcrumbs {
-  margin: 20px 0 0 0;
-  padding: 0 20px;
-  opacity: 0.8;
+  width: 100%;
+  margin: 0;
+  padding: 0 ;
+  display: inline-block;
 }
 #input-feedback {
   color: #B09263;
