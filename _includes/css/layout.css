@@ -57,10 +57,6 @@ footer {
   overflow-x: scroll;
   white-space: nowrap;
 }
-.cart-page {
-  width: 90%;
-  margin: 0 auto;
-}
 
 /* #Modules - checkout */
 .book-infos-checkout-box {
