@@ -86,6 +86,9 @@
   }
 
   /*Store*/
+  .book-infos {
+    display: block !important;
+  }
   .book-infos-checkout-box {
     width: 100%;
   }
@@ -132,12 +135,16 @@
 
   /* payment */
   .cart-page {
-    width: 100%;
+    width: 95% !important;
   }
   .cart-page .cart-box {
     width: 100%;
     display: block;
-    margin: 20px 0;
+  }
+  .cart-data-infos-image {
+  width: 40% !important;
+  margin: 0 !important;
+  display: block !important;
   }
 }
 
