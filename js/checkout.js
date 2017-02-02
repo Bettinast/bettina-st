@@ -14,16 +14,19 @@ $(document).ready(function(){
       if (data.errors) {
         // console.log(data.errors);
         alert("Erro salvando cartão: " + JSON.stringify(data.errors));
+        // tratar essa excecao
       } else {
         var token = data.id;
         $("#token").val( data.id );
         console.log(data);
 
-        var post_url = "http://avelar-dashboardpitzi.rhcloud.com/orders/dd0a54c40de33ebe1baf59ca7f7eaddd/" + token
-        var email = "fortunato.avelar@gmail.com"; //email do cliente
-        var amount = 1000; // valor em centavos
+        var post_url = "http://avelar-dashboardpitzi.rhcloud.com/orders/dd0a54c40de33ebe1baf59ca7f7eaddd/" + token;
+        var email = "fortunato.avelar@gmail.com"; //email do cliente $("#email").val();
+        var amount = 1000; // valor em centavos 25*100
         var qtde = 1; // quantidade de produtos
         var item = "Nome do livro"; // que produto está sendo vendido
+        console.log(post_url);
+        console.log("Vai chamar");
 
         $.ajax({
           url: post_url,
@@ -34,6 +37,9 @@ $(document).ready(function(){
             if(data.success) {
               // pagamento feito com sucesso, enviar para planilha
               var invoice_id = data.response.invoice_id; // id da transação no iugu "E9EFA86CC7344176B8485D237FD20817"
+              console.log("Chamou " + invoice_id);
+              //compra realizada com sucesso!
+              // Send user form
             } else {
               console.log("falhou a transação");
               console.log(data.response.errors);
@@ -41,8 +47,6 @@ $(document).ready(function(){
           },
           type: 'POST'
         });
-
-
       }
       // Seu código para continuar a submissão
       // Ex: form.submit();
