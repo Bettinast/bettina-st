@@ -2,6 +2,13 @@
 #payment-form {
   margin-bottom: 20px;
 }
+input.error {
+  border: 2px solid red;
+  outline: none;
+}
+label.error {
+  color: red;
+}
 .cart-page {
   width: 80%;
   margin: 0 auto;
@@ -32,7 +39,7 @@
   text-align: left;
   padding-left: 40px;
 }
-.book-infos {
+.cart-page-book-infos {
   display: flex;
   flex-direction: row;
   border: 5px solid #1D1D1D;
@@ -83,7 +90,8 @@
 }
 .form-small-row-item {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 5px;
+  vertical-align: top;
 }
 /* Credit Card Form */
 .usable-creditcard-form, .usable-creditcard-form * {
