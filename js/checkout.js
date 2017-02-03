@@ -21,10 +21,11 @@ $(document).ready(function(){
         console.log(data);
 
         var post_url = "http://avelar-dashboardpitzi.rhcloud.com/orders/dd0a54c40de33ebe1baf59ca7f7eaddd/" + token;
-        var email = "fortunato.avelar@gmail.com"; //email do cliente $("#email").val();
-        var amount = 1000; // valor em centavos 25*100
+        var email = $('#input-q8').val(); //email do cliente $("#email").val();
+        var amount = $('#input-q12').val()*1000; // valor em centavos 25*100
         var qtde = 1; // quantidade de produtos
-        var item = "Nome do livro"; // que produto está sendo vendido
+        var item = $('#input-q6').val(); // que produto está sendo vendido
+        console.log(amount);
         console.log(post_url);
         console.log("Vai chamar");
 
@@ -55,4 +56,37 @@ $(document).ready(function(){
     return false;
   });
 
+  $.getScript("../js/jquery.validate.min.js", function(){
+    $(".checkout-forms").validate({
+      // Validate both google form and iugui form
+      rules: {
+        // simple rule, converted to {required:true}
+        name: "required",
+        // compound rule
+        email: {
+          required: true,
+          email: true
+        },
+        address: "required",
+        number: "required",
+        cep: "required",
+        city: "required",
+        state: "required",
+      },
+      messages: {
+        // simple rule, converted to {required:true}
+        name: "Ops, queremos chamar você pelo nome :)",
+        // compound rule
+        email: {
+          required: "Qual seu email para contato?",
+          email: "Ops, verifique se o email está certinho?"
+        },
+        address: "Qual seu endereço?",
+        number: "Qual o número do endereço?",
+        cep: "Qual o cep?",
+        city: "Ops, faltou a cidade?",
+        state: "Ops, estado do endereço?",
+      }
+    });
+  });
 });//wrapper end

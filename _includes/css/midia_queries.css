@@ -8,7 +8,11 @@
   .btn-white-landing {
     display: none;
   }
-  .header, .header-pages-content {
+  .header-sub-title,
+  .cart-data-infos-content,
+  .book-infos-checkout-box,
+  .header,
+  .header-pages-content {
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -32,10 +36,6 @@
     display: block !important;
     width: 90% !important;
     margin: 0 auto !important;
-  }
-  .header-sub-title{
-    width: 100% !important;
-    max-width: 100% !important;
   }
   .section-news-item {
     display: block !important;
@@ -85,15 +85,8 @@
     padding: 0 10px;
   }
 
-  /*Store*/
-  .book-infos {
-    display: block !important;
-  }
-  .book-infos-checkout-box {
-    width: 100%;
-  }
-
   /* Grid */
+  .col-20, .col-30, .col-33, .col-70,
   .bet-2-col {
     width: 100%;
     display: block;
@@ -133,7 +126,17 @@
     padding: 0 20px;
   }
 
-  /* payment */
+  /* Store */
+  .cart-page-book-infos {
+    display: block;
+  }
+  .checkout-cart {
+    position: relative;
+    margin: 0 auto;
+  }
+  .checkout-title {
+    text-align: center;
+  }
   .cart-page {
     width: 95% !important;
   }
@@ -142,16 +145,14 @@
     display: block;
   }
   .cart-data-infos-image {
-  width: 40% !important;
-  margin: 0 !important;
-  display: block !important;
+  width: 40%;
+  margin: 0;
+  display: block;
   }
+
 }
 
 @media only screen and (max-width:420px){
-  .cart-data-infos-content {
-    width: 60% !important;
-  }
   .bg-landing-top {
     background-position: -500px 0 !important;
   }

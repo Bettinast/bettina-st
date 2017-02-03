@@ -22,7 +22,7 @@
           {{page.book}}
           <i class="icon checkout-cart"></i>
         </h2>
-        <div class="book-infos">
+        <div class="cart-page-book-infos">
           <div class="cart-box cart-page-shipping cart-data">
             <h3 class="book-infos-checkout-box-title">
               1 - Informe os dados para entrega
@@ -30,46 +30,46 @@
             <div class="cart-box-content-padding">
               Complete todos os campos ok? Assim garantimos que o seu livro chege certinho ao seu endereço
               <br>
-              <form id="input-form-shiping" action="" method="POST" target="no-target">
+              <form class="checkout-forms" id="input-form-shiping" action="" method="POST" target="no-target">
                 <label for="">Seu Nome</label>
-                <input id="input-q1" class="payment-input" type="text" name="" value="" tabindex="1">
+                <input id="input-q1" class="payment-input" type="text" name="name" value="" tabindex="1">
 
                 <label for="">Email para contato</label>
-                <input id="input-q8" class="payment-input" type="text" name="q8" value="" tabindex="2">
-
-                <label for="">Endereço</label>
-                <input id="input-q2" class="payment-input" type="text" name="" value="" tabindex="2">
+                <input id="input-q8" class="payment-input" type="text" name="email" value="" tabindex="2">
 
                 <div class="form-small-row">
-                  <div class="form-small-row-item">
-                    <label for="">Número</label>
-                    <input id="input-q3" class="payment-input" type="text" name="" value="" tabindex="3">
+                  <div class="form-small-row-item col-70">
+                    <label for="">Endereço</label>
+                    <input id="input-q2" class="payment-input" type="text" name="address" value="" tabindex="2">
                   </div>
-
-                  <div class="form-small-row-item">
-                    <label for="">CEP</label>
-                    <input id="input-q4" class="payment-input" type="text" name="" value="" tabindex="4">
+                  <div class="form-small-row-item col-20">
+                    <label for="">Número</label>
+                    <input id="input-q3" class="payment-input" type="text" name="number" value="" tabindex="3">
                   </div>
                 </div>
 
                 <div class="form-small-row">
-                  <div class="form-small-row-item">
-                    <label for="">Cidade</label>
-                    <input id="input-q10" class="payment-input" type="text" name="" value="" tabindex="3">
+                  <div class="form-small-row-item col-30">
+                    <label for="">CEP</label>
+                    <input id="input-q4" class="payment-input" type="text" name="cep" value="" tabindex="4">
                   </div>
-
-                  <div class="form-small-row-item">
+                  <div class="form-small-row-item col-30">
+                    <label for="">Cidade</label>
+                    <input id="input-q10" class="payment-input" type="text" name="city" value="" tabindex="3">
+                  </div>
+                  <div class="form-small-row-item col-30">
                     <label for="">Estado (UF)</label>
-                    <input id="input-q11" class="payment-input" type="text" name="" value="" tabindex="4">
+                    <input id="input-q11" class="payment-input" type="text" name="state" value="" tabindex="4">
                   </div>
                 </div>
 
                 <label for="complement">Complemento</label>
                 <input id="input-q5" class="payment-input" type="text" name="complement" value="" tabindex="5">
 
-                <input id="input-q6" placeholder="nome do livro" style="display:none;" name="q6" value="{{page.book}}">
-                <input id="input-q7" placeholder="sp" style="display:none;" name="q7">
-                <input id="input-q9" placeholder="nome do livro" style="display:none;" name="q9" value="inv_ID">
+                <input id="input-q6" style="display:none;" name="q6" value="{{page.book}}">
+                <input id="input-q12" style="display:none;" name="q1" value="{{page.price}}">
+                <input id="input-q7" style="display:none;" name="q7">
+                <input id="input-q9" style="display:none;" name="q9" value="inv_ID">
                 <input type="hidden" name="fvv" value="1"><input type="hidden" name="draftResponse" value="[,,&quot;7671967752946958588&quot;]
                 "><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="7671967752946958588">
                 <p>
@@ -88,7 +88,7 @@
                 <img class="cart-data-infos-image" src="{{page.thumb}}" alt="">
                 <div class="cart-data-infos-content">
                   <div class="book-infos-price">
-                    R${{page.price}},{{page.cents}}
+                    R${{page.price}},00
                   </div>
                   Frete Grátis <i class="icon free-shipping"></i>
                   <h3> Dados do cartão: </h3>

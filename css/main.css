@@ -7,5 +7,5 @@
 {% include css/base.css %}
 {% include css/typography.css %}
 {% include css/form.css %}
+{% include css/checkout.css %}
 {% include css/midia_queries.css %}
-{% include css/payment.css %}

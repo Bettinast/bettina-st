@@ -2,6 +2,7 @@
 label {
   display: block;
   margin-top: 10px;
+  font-weight: bold;
 }
 .payment-input {
   border: 2px solid #1D1D1D;
