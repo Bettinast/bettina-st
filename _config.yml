@@ -1,11 +1,19 @@
-markdown: kramdown
-
-### Site info:
-baseurl: /bettina-st
-author: Bettina Stingelin
+---
 title: Bettina Stingelin Writer
-email: ""
-description: "Bettina's web site"
-
-### App info:
-exclude: ['README.md', 'Gemfile.lock', 'vendor']
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+markdown: kramdown
+baseurl: "/bettina-st"
+author: Bettina Stingelin
+email: ''
+description: Bettina's web site
+exclude:
+- README.md
+- Gemfile.lock
+- vendor
