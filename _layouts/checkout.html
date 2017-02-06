@@ -69,7 +69,7 @@
                 <input id="input-q6" style="display:none;" name="q6" value="{{page.book}}">
                 <input id="input-q12" style="display:none;" name="q1" value="{{page.price}}">
                 <input id="input-q7" style="display:none;" name="q7">
-                <input id="input-q9" style="display:none;" name="q9" value="inv_ID">
+                <input id="input-q9" style="display:none;" name="q9" value="">
                 <input type="hidden" name="fvv" value="1"><input type="hidden" name="draftResponse" value="[,,&quot;7671967752946958588&quot;]
                 "><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="7671967752946958588">
                 <p>
@@ -180,7 +180,7 @@
           var q11ID = "entry.1821267599";
           var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSffw9U9clzcP3QEP0GeWC3EL8mZyA9XhBiPgvMcGKd7kcAJSQ/formResponse?';
           var submitRef = '&submit=Submit';
-          var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + "&" + q5ID + "=" + inputq5 + "&" + q6ID + "=" + inputq6 + "&" + q7ID + "=" + inputq7 + "&" + q8ID + "=" + inputq8 + submitRef);
+          var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + "&" + q5ID + "=" + inputq5 + "&" + q6ID + "=" + inputq6 + "&" + q7ID + "=" + inputq7 + "&" + q8ID + "=" + inputq8 + "&" + q9ID + "=" + inputq9 + "&" + q10ID + "=" + inputq10 + "&" + q11ID + "=" + inputq11 + submitRef);
           console.log(submitURL);
           $(this)[0].action=submitURL;
           console.log("Enviou o google form");
