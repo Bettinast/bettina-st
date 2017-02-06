@@ -25,9 +25,8 @@ $(document).ready(function(){
         var amount = $('#input-q12').val()*1000; // valor em centavos 25*100
         var qtde = 1; // quantidade de produtos
         var item = $('#input-q6').val(); // que produto está sendo vendido
-        console.log(amount);
         console.log(post_url);
-        console.log("Vai chamar");
+        // console.log("Vai chamar");
 
         $.ajax({
           url: post_url,
@@ -38,7 +37,7 @@ $(document).ready(function(){
             if(data.success) {
               // pagamento feito com sucesso, enviar para planilha
               var invoice_id = data.response.invoice_id; // id da transação no iugu "E9EFA86CC7344176B8485D237FD20817"
-              console.log("Chamou " + invoice_id);
+              // console.log("Chamou " + invoice_id);
               //compra realizada com sucesso!
               // Send user form
             } else {
