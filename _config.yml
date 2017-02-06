@@ -1,6 +1,6 @@
 ---
 title: Bettina Stingelin Writer
-timezone: UTC
+timezone: America/Sao_Paulo
 collections:
   posts:
     title: Posts
@@ -11,7 +11,7 @@ collections:
 markdown: kramdown
 baseurl: "/bettina-st"
 author: Bettina Stingelin
-email: ''
+email: 
 description: Bettina's web site
 exclude:
 - README.md
