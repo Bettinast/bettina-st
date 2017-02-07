@@ -1,0 +1,195 @@
+{% include head.html %}
+  <body>
+    <header class="site-header header-pages" role="banner">
+      <div class="header-pages-content">
+        <div class="mobile-navegation">
+          <a href="/" class="mobile-navegation-logo logo"></a>
+          <a href="#" class="icon icon-hamburguer-menu"></a>
+        </div>
+        <div class="header-navegation navegation-landing">
+          <a href="/" class="header-logo logo"></a>
+          <div class="navegation-link-content">
+            <h5 class="cart-page-breadcrumbs">
+              <a class="navegation-link" href="{{page.backlink}}">« Voltar</a> | &nbsp; 1. Dados para entrega » 2. Pagamento » 3. Felicidade!
+            </h5>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="wrapper page cart-page">
+        <h2 class="checkout-title">
+          {{page.book}}
+          <i class="icon checkout-cart"></i>
+        </h2>
+        <div class="cart-page-book-infos">
+          <div class="cart-box cart-page-shipping cart-data">
+            <h3 class="book-infos-checkout-box-title">
+              1 - Informe os dados para entrega
+            </h3>
+            <div class="cart-box-content-padding">
+              Complete todos os campos ok? Assim garantimos que o seu livro chege certinho ao seu endereço
+              <br>
+              <form class="checkout-forms" id="input-form-shiping" action="" method="POST" target="no-target">
+                <label for="">Seu Nome</label>
+                <input id="input-q1" class="payment-input" type="text" name="name" value="" tabindex="1">
+
+                <label for="">Email para contato</label>
+                <input id="input-q8" class="payment-input" type="text" name="email" value="" tabindex="2">
+
+                <div class="form-small-row">
+                  <div class="form-small-row-item col-70">
+                    <label for="">Endereço</label>
+                    <input id="input-q2" class="payment-input" type="text" name="address" value="" tabindex="2">
+                  </div>
+                  <div class="form-small-row-item col-20">
+                    <label for="">Número</label>
+                    <input id="input-q3" class="payment-input" type="text" name="number" value="" tabindex="3">
+                  </div>
+                </div>
+
+                <div class="form-small-row">
+                  <div class="form-small-row-item col-30">
+                    <label for="">CEP</label>
+                    <input id="input-q4" class="payment-input" type="text" name="cep" value="" tabindex="4">
+                  </div>
+                  <div class="form-small-row-item col-30">
+                    <label for="">Cidade</label>
+                    <input id="input-q10" class="payment-input" type="text" name="city" value="" tabindex="3">
+                  </div>
+                  <div class="form-small-row-item col-30">
+                    <label for="">Estado (UF)</label>
+                    <input id="input-q11" class="payment-input" type="text" name="state" value="" tabindex="4">
+                  </div>
+                </div>
+
+                <label for="complement">Complemento</label>
+                <input id="input-q5" class="payment-input" type="text" name="complement" value="" tabindex="5">
+
+                <input id="input-q6" style="display:none;" name="q6" value="{{page.book}}">
+                <input id="input-q12" style="display:none;" name="q1" value="{{page.price}}">
+                <input id="input-q7" style="display:none;" name="q7">
+                <input id="input-q9" style="display:none;" name="q9" value="">
+                <input type="hidden" name="fvv" value="1"><input type="hidden" name="draftResponse" value="[,,&quot;7671967752946958588&quot;]
+                "><input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="7671967752946958588">
+                <p>
+                  <button style="display:none;" class="btn bnt-submit-google-form" id="form-submit" type="submit"></button>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="cart-box cart-data">
+            <div id="input-feedback"></div>
+            <h3 class="book-infos-checkout-box-title">
+              2 - Pagamento
+            </h3>
+            <div class="cart-box-content-padding">
+              <div class="cart-data-infos">
+                <img class="cart-data-infos-image" src="{{page.thumb}}" alt="">
+                <div class="cart-data-infos-content">
+                  <div class="book-infos-price">
+                    R${{page.price}},00
+                  </div>
+                  Frete Grátis <i class="icon free-shipping"></i>
+                  <h3> Dados do cartão: </h3>
+                  <ul class="card-flags">
+                    <li class="icon flag-cards flag-master"></li>
+                    <li class="icon flag-cards flag-visa"></li>
+                    <li class="icon flag-cards flag-amex"></li>
+                  </ul>
+                  <form id="payment-form" target="_blank" action="#" method="POST">
+                      <div class="usable-creditcard-form">
+                        <div class="wrapper">
+                          <div class="input-group nmb_a">
+                            <div class="icon ccic-brand"></div>
+                              <input autocomplete="off" class="credit_card_number" data-iugu="number" placeholder="Número do Cartão" type="text" value="" />
+                            </div>
+                          <div class="input-group nmb_b">
+                            <div class="icon ccic-cvv"></div>
+                              <input autocomplete="off" class="credit_card_cvv" data-iugu="verification_value" placeholder="CVV" type="text" value="" />
+                          </div>
+                          <div class="input-group nmb_c">
+                            <div class="icon ccic-name"></div>
+                              <input class="credit_card_name" data-iugu="full_name" placeholder="Titular do Cartão" type="text" value="" />
+                          </div>
+                          <div class="input-group nmb_d">
+                            <div class="icon ccic-exp"></div>
+                              <input autocomplete="off" class="credit_card_expiration" data-iugu="expiration" placeholder="MM/AA" type="text" value="" />
+                          </div>
+                        </div>
+                        <div class="footer">
+                          <img src="http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/cc-icons.e8f4c6b4db3cc0869fa93ad535acbfe7.png" alt="Visa, Master, Diners. Amex" border="0" />
+                          <a class="iugu-btn" href="http://iugu.com" tabindex="-1"><img src="http://storage.pupui.com.br/9CA0F40E971643D1B7C8DE46BBC18396/assets/payments-by-iugu.1df7caaf6958f1b5774579fa807b5e7f.png" alt="Pagamentos por Iugu" border="0" /></a>
+                        </div>
+                      </div>
+
+                      <div class="token-area">
+                          <label for="token">Token do Cartão de Crédito - Enviar para seu Servidor</label>
+                          <input type="text" name="token" id="token" value="" readonly="true" size="64" style="text-align:center" />
+                      </div>
+
+                      <div>
+                        <button class="btn bnt-submit-google-form" type="submit">Finalizar compra</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <p class="payment-footer">
+          <i class="icon flag-secure"></i> Site seguro. Caso precise de ajuda escreva para: <a id="bettina_contato" href="mailto:bettina.escritora@gmail.com">bettina.escritora@gmail.com</a>
+        </p>
+        {{ content }}
+        <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+      </div>
+    </section>
+    {% include footer.html %}
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".bnt-submit-google-form").on("click", function() {
+        $('#input-form-shiping').submit();
+      });
+      $('#input-form-shiping').one('submit',function(){
+        //reverse captcha
+        var sp = $('#input-q7').val();
+        if (sp == "") {
+          //send form
+          var inputq1 = encodeURIComponent($('#input-q1').val());
+          var inputq2 = encodeURIComponent($('#input-q2').val());
+          var inputq3 = encodeURIComponent($('#input-q3').val());
+          var inputq4 = encodeURIComponent($('#input-q4').val());
+          var inputq5 = encodeURIComponent($('#input-q5').val());
+          var inputq6 = encodeURIComponent($('#input-q6').val());
+          var inputq7 = encodeURIComponent($('#input-q7').val());
+          var inputq8 = encodeURIComponent($('#input-q8').val());
+          var inputq9 = encodeURIComponent($('#input-q9').val());
+          var inputq10 = encodeURIComponent($('#input-q10').val());
+          var inputq11 = encodeURIComponent($('#input-q11').val());
+          var q1ID = "entry.2129248737";
+          var q2ID = "entry.1515862082";
+          var q3ID = "entry.865173911";
+          var q4ID = "entry.1517329504";
+          var q5ID = "entry.1664080007";
+          var q6ID = "entry.133297670";
+          var q7ID = "entry.390512294";
+          var q8ID = "entry.1776115297";
+          var q9ID = "entry.1526182345";
+          var q10ID = "entry.657231913";
+          var q11ID = "entry.1821267599";
+          var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSffw9U9clzcP3QEP0GeWC3EL8mZyA9XhBiPgvMcGKd7kcAJSQ/formResponse?';
+          var submitRef = '&submit=Submit';
+          var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + "&" + q5ID + "=" + inputq5 + "&" + q6ID + "=" + inputq6 + "&" + q7ID + "=" + inputq7 + "&" + q8ID + "=" + inputq8 + "&" + q9ID + "=" + inputq9 + "&" + q10ID + "=" + inputq10 + "&" + q11ID + "=" + inputq11 + submitRef);
+          console.log(submitURL);
+          $(this)[0].action=submitURL;
+          console.log("Enviou o google form");
+          //end user data form
+        }
+      });
+    });
+    </script>
+    <script type="text/javascript" src="https://js.iugu.com/v2"></script>
+    <script src="/js/checkout.js"></script>
+  </body>
+</html>

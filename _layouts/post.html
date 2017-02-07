@@ -1,12 +1,25 @@
-<!-- {% include head.html %}
-  <body>
+{% include head.html %}
+  <body class="body-blog-post">
     {% include header_page.html %}
-    post
+    <style>
+      {% include css/blog.css %}
+    </style>
     <section>
-      <div class="wrapper">
+      <div class="wrapper-post">
+        <a class="back-blog" href="/blog">← Voltar</a>
+        <time class="blog-post-date">{{ page.date | date_to_string | replace:"Jan","Jan" | replace:"Feb","Fev" | replace:"Mar","Mar" | replace:"Apr","Abr" | replace:"May","Mai" | replace:"Jun","Jun" | replace:"Jul","Jul" | replace:"Aug","Ago" | replace:"Sep","Set" | replace:"Oct","Out" | replace:"Nov","Nov" | replace:"Dec","Dez"}}</time>
+        <h2 class="blog-post-title">{{page.title}}</h2>
         {{ content }}
       </div>
     </section>
     {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/zoom.min.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $('img').attr('data-action','zoom');
+      });
+    </script>
   </body>
-</html> -->
+</html>

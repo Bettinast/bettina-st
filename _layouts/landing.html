@@ -2,16 +2,20 @@
   <body>
     <header class="site-header bg-landing-top" role="banner">
       <div class="header">
+        <div class="mobile-navegation">
+          <a href="/" class="mobile-navegation-logo logo"></a>
+          <a href="#" class="icon icon-hamburguer-menu"></a>
+        </div>
         <div class="header-navegation navegation-landing">
           <a href="/" class="header-logo logo-white logo-white-landing"></a>
           <div class="navegation-link-content">
             <a class="navegation-link text-white" href="/sobre">Sobre</a>
-            <a class="navegation-link text-white" href="#">Ficção</a>
-            <a class="navegation-link text-white" href="/livros-infantil">
+            <a class="navegation-link text-white" href="/ficcao">Ficção</a>
+            <a class="navegation-link text-white" href="/literatura-infantil">
               Literatura Infantil
             </a>
-            <a class="navegation-link text-white" href="#">Blog</a>
-            <a class="btn btn-white btn-white-landing" href="#">Comprar</a>
+            <a class="navegation-link text-white" href="/blog">Blog</a>
+            <a class="btn btn-white btn-white-landing" href="/literatura-infantil">Comprar</a>
           </div>
         </div>
         <div class="header-content">
@@ -19,41 +23,46 @@
             {{ site.author }}
           </h1>
           <p class="header-sub-title">
-            Em seu íntimo sabia que um dia estaria a correr livremente por um lugar só seu, em que poderia ser só ela, mas não ela só - concluíra que a solidão não é um estado físico, mas sim de espírito. Na sua imaginação fértil de menina, seria como calçar finalmente os sapatos certos, depois de anos de calos e dores lancinantes nas solas dos pés. Então ela desfez as amarras, levantou âncora e içou as velas
+            Em seu íntimo sabia que um dia estaria a correr livremente por um lugar só seu, em que poderia ser só ela, mas não ela só - concluíra que a solidão não é um estado físico, mas sim de espírito. Na sua imaginação fértil de menina, seria como calçar finalmente os sapatos certos, depois de anos de calos e dores lancinantes nas solas dos pés. Então ela desfez as amarras, levantou âncora e içou as velas.
           </p>
         </div>
       </div>
+      <a href="#" class="icon icon-arrow-down"></a>
     </header>
     <section>
       <div class="wrapper">
         {{ content }}
         <div class="page-content section-news">
+          <div class="section-news-item section-news-description-image">
+            <div class="new-target"></div>
+            <img src="/img/books/livro_cora_a_coruja_que_nao_sabia_piar.png" />
+          </div>
           <div class="section-news-item section-news-description">
             <h2 class="new-book-title">
               Cora a coruja que não sabia piar
             </h2>
             <p>
-              Este é o 4 livro de Bettina, um conto lindo com muita musica e aventura - Escrito em 2016, publicado em 2017...
-            </p>
-            <p>
-              Sinopse  - Cora não era burra. Para começo de conversa, cora era uma coru- ja e não um burro. Mas seus colegas de escola teimavam em dizer que a pequena coruja só faltava dar coices, pois empacada como um burro ela já era. Cora não se lembrava mais de quantas vezes saíra aos prantos da escola para se empoleirar com cara de emburrada no galho de alguma árvore.
+              Cora não é burra. Cora é, na verdade, uma pequena coruja que sofre, pois não consegue piar. Além disso, é muito lerdinha e seus colegas de escola vivem a rir do seu jeito. Um dia, porém, cansada de ser alvo de piadas, foge para a floresta escura rumo ao desconhecido. Em sua jornada, a corujinha encontra um novo sentido para a sua vida, e com a ajuda dos sábios castores Castoríades, descobre um talento que nunca imaginou possuir.
             </p>
             <p>
               <a href="/infantil/cora-a-coruja-que-nao-sabia-piar" class="btn">Saber mais sobre a Cora</a>
             </p>
           </div>
-          <div class="section-news-item section-news-description-image">
-            <div class="new-target"></div>
-            <img src="{{site.baseurl}}/img/books/livro_cora_a_coruja_que_nao_sabia_piar.png" />
-          </div>
         </div>
-        <div class="section-divisor"></div>
+        <div class="section-divisor">
+          <div class="book-scrool">
+            <div class="book-scrool-content">
+              <img style="width: 1900px;" src="/img/section_divisor.png" />
+            </div>
+          </div>
+          <div class="magic-square"></div>
+        </div>
         <div class="landing-about">
           <div class="page-content landing-about-content">
             <div class="landing-about-description">
-              <h2>
+              <h1 class="landing-about-title">
                 Ler é aprender
-              </h2>
+              </h1>
               <p class="serif-font">
                 Ler é ter espírito aventureiro, é desbravar o desconhecido e não ter medo de aprender.
               </p>
@@ -70,13 +79,13 @@
             </h2>
             <p>
               <a href="" target="_blank">
-                <img src="{{site.baseurl}}/img/midia/midia_bookaholic_girls.png" />
+                <img src="/img/midia/midia_bookaholic_girls.png" />
               </a>
               <a href="" target="_blank">
-                <img src="{{site.baseurl}}/img/midia/midia_clube_da_leitura.png" />
+                <img src="/img/midia/midia_clube_da_leitura.png" />
               </a>
               <a href="" target="_blank">
-                <img src="{{site.baseurl}}/img/midia/midia_diario_de_jardineira.png" />
+                <img src="/img/midia/midia_diario_de_jardineira.png" />
               </a>
             </p>
           </div>
@@ -86,13 +95,13 @@
             </h2>
             <p>
               <a href="" target="_blank">
-                <img src="{{site.baseurl}}/img/midia/shop_livraria_cultura.png" alt="imprensa" />
+                <img src="/img/midia/shop_livraria_cultura.png" alt="imprensa" />
               </a>
               <a href="" target="_blank">
-                <img src="{{site.baseurl}}/img/midia/shop_saraiva.png" alt="imprensa" />
+                <img src="/img/midia/shop_saraiva.png" alt="imprensa" />
               </a>
               <a href="" target="_blank">
-                <img src="{{site.baseurl}}/img/midia/shop_maravilha_livros.png" alt="imprensa" />
+                <img src="/img/midia/shop_maravilha_livros.png" alt="imprensa" />
               </a>
             </p>
           </div>
@@ -101,6 +110,6 @@
     </section>
     {% include footer.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="{{site.baseurl}}/js/main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

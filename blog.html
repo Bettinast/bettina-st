@@ -1,0 +1,26 @@
+---
+title: Blog
+layout: page
+---
+
+<style>
+  {% include css/blog.css %}
+</style>
+<div class="page-content page-content-blog">
+  {% for post in site.posts %}
+    <div class="blog-post-item">
+      <time class="blog-post-date">{{ post.date | date_to_string | replace:"Jan","Jan" | replace:"Feb","Fev" | replace:"Mar","Mar" | replace:"Apr","Abr" | replace:"May","Mai" | replace:"Jun","Jun" | replace:"Jul","Jul" | replace:"Aug","Ago" | replace:"Sep","Set" | replace:"Oct","Out" | replace:"Nov","Nov" | replace:"Dec","Dez"}}</time>
+      <a href="{{post.url}}">
+        <h2 class="blog-post-title">
+          {{post.title}}
+        </h2>
+      </a>
+      <p>
+        {{post.excerpt}}
+      </p>
+    </div>
+  {% endfor %}
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>

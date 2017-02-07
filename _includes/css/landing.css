@@ -2,12 +2,13 @@ body {
   background: #F3F7F8;
 }
 .bg-landing-top {
-  background: url("{{site.baseurl}}/img/bg_landing_top.jpg") no-repeat;
+  background: url("/img/bg_landing_top.jpg") no-repeat;
   width: 100%;
   min-height: 100%;
   background-size: cover;
   position: relative;
   display: flex;
+  background-position: 0 0;
   /*box-shadow: -25px -25px 45px #BEBEBE;*/
 }
 .header-title {
@@ -23,19 +24,25 @@ body {
   letter-spacing: 1px;
 }
 .landing-about {
-  background: url("{{site.baseurl}}/img/landing_bet_middle.png") no-repeat;
+  background: url("/img/landing_bet_middle.png") no-repeat;
   width: 100%;
   height: 800px;
   display: table;
   background-size: cover;
 }
+.landing-about-title {
+  font-size: 102px;
+  margin-bottom: 80px;
+  line-height: 52px;
+}
 .landing-about-content {
   display: table-cell;
   height: 200px;
   vertical-align: middle;
+  padding: 30px 0;
 }
 .landing-about-description {
-  width: 400px;
+  width: 50%;
   padding: 0 10%;
   color: #fff;
   font-size: 18px;
@@ -43,13 +50,13 @@ body {
 }
 .midia-landing {
   width: 90%;
-  margin: 100px auto;
-  background: #F3F7F8;
-  padding: 100px 20px;
+  margin: -100px auto -80px auto;
+  padding: 180px 20px 180px 20px;
   text-align: center;
-  -webkit-border-radius: 20px;
-     -moz-border-radius: 20px;
-          border-radius: 20px;
+  border: 8px solid #B09263;
+  z-index: 100;
+  position: relative;
+  z-index: 0;
 }
 .midia-press,
 .midia-bookstores {
@@ -75,11 +82,15 @@ body {
 }
 .section-news-description {
   width: 47%;
-  margin-right: 10%;
+  margin-left: 10%;
 }
 .section-news-description-image {
   width: 40%;
+  text-align: center;
 }
 .section-news-description-image img {
-  width: 100%;
+  width: 90%;
+}
+.book-scrool {
+  margin-top: -10px;
 }

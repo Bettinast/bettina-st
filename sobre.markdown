@@ -1,14 +1,17 @@
 ---
-layout: page
 title: Bettina
+layout: page
 ---
+
 <div class="page-content">
-  <p>
-    texto
-    <br>
-    foto
-    <br>
-    texto
+  <p style="font-weight: 400;font-style: normal;font-size: 22px;line-height: 1.72;letter-spacing: -.003em;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;max-width: 750px;margin: 0 auto 40px auto;">
+    Bettina Stingelin nasceu em Blumenau, Santa Catarina, em 11 de outubro de 1979. Graduou-se em História pela Universidade Regional de Blumenau (FURB) em 2001. Foi 17° lugar no Concurso Nacional Armazém Literário de 2003 com o conto “Uma Figura na Névoa” e participou da Coletânea “Réquiem para o Natal”, com o conto “Presente de Natal”, em 2008. É autora dos livros de história regional “Vários Passos, Um longo Caminho”, “Uma Taba para Todos: 150 anos do Tabajara Tênis Clube”, “Dos Camarins ao Grande Espetáculo: 145 Anos do Teatro Carlos Gomes” e “Festitália: 20 Anos de Amor pela Cultura Italiana”; e dos livros infantis da série “As Aventuras de Robi” e Pupu e “Cora, a Coruja Que Não Sabia Piar”.
+  </p>
+  <p id="bettina_contato">
+    Contato:
+    <a href="mailto:bettina.escritora@gmail.com">
+      bettina.escritora@gmail.com
+    </a>
   </p>
   <div class="book-more-infos flex-content">
     <div class="flex-item">

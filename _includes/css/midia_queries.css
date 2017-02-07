@@ -1,4 +1,100 @@
-@media only screen and (max-width:940px){
+@media only screen and (max-width:820px){
+  /*Navegation*/
+  .navegation-landing .navegation-link {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .btn-white-landing {
+    display: none;
+  }
+  .header-sub-title,
+  .cart-data-infos-content,
+  .book-infos-checkout-box,
+  .header,
+  .header-pages-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .header-navegation {
+    padding-top: 10px;
+  }
+  /*landing*/
+  .header-logo {
+    margin: 20px auto !important;
+    display: block !important;
+  }
+  .header-title {
+    font-size: 72px !important;
+  }
+  .navegation-link-content {
+    display: block;
+    position: relative;
+    top: 0;
+  }
+  .header-content {
+    display: block !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .section-news-item {
+    display: block !important;
+  }
+  .section-news-description {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .landing-about {
+    width: 100%;
+    height: auto !important;
+    background-position: -80px 0 !important;
+  }
+  .section-news-description-image,
+  .midia-press, .midia-bookstores,
+  .landing-about-description {
+    width: 100% !important;
+  }
+  .midia-press, .midia-bookstores {
+    text-align: center !important;
+    margin: 0 !important;
+  }
+  .landing-about-title {
+    font-size: 62px !important;
+    margin-bottom: 40px !important;
+  }
+  .midia-landing {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  .new-target {
+    right: 0px;
+    top: -70px;
+  }
+  /*Pages*/
+  .page-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .page .page-content {
+    padding: 20px !important;
+  }
+  .header-pages-title h1 {
+    font-size: 38px;
+    padding: 0 10px;
+  }
+
+  /* Grid */
+  .col-20, .col-30, .col-33, .col-70,
+  .bet-2-col {
+    width: 100%;
+    display: block;
+    padding: 0;
+    position: relative;
+  }
+
+  /*Footer*/
   .flex-content {
     display: block;
     flex-wrap: wrap;
@@ -9,5 +105,82 @@
   .footer-navegation-content {
     width: 100%;
     text-align: center;
+  }
+  .logo,
+  .logo-white {
+    width: 300px;
+    background-size: 100%;
+  }
+  .footer .logo-white {
+    width: 257px;
+  }
+  .footer-navegation-item-divisor {
+    display: none;
+  }
+  .footer .footer-newsletter.flex-item {
+    text-align: center;
+  }
+
+  /*Blog*/
+  .page-content-blog {
+    padding: 0 20px;
+  }
+
+  /* Store */
+  .cart-page-book-infos {
+    display: block;
+  }
+  .checkout-cart {
+    position: relative;
+    margin: 0 auto;
+  }
+  .checkout-title {
+    text-align: center;
+  }
+  .cart-page {
+    width: 95% !important;
+  }
+  .cart-page .cart-box {
+    width: 100%;
+    display: block;
+  }
+  .cart-data-infos-image {
+  width: 40%;
+  margin: 0;
+  display: block;
+  }
+
+}
+
+@media only screen and (max-width:420px){
+  .bg-landing-top {
+    background-position: -500px 0 !important;
+  }
+  .header-logo {
+    display: none !important;
+  }
+  .navegation-link-content {
+    display: none;
+  }
+  .header-pages-title {
+    padding: 30px 0;
+  }
+  .mobile-navegation-logo {
+    width: 251px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 9px;
+    left: 10px;
+  }
+  .mobile-navegation {
+    background: #F3F7F8;
+    width: 100%;
+    height: 55px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 0px -1px 10px 0px #1d1d1d;
+            box-shadow: 0px -1px 10px 0px #1d1d1d;
   }
 }

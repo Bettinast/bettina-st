@@ -1,11 +1,19 @@
+---
+title: Bettina Stingelin Writer
+timezone: America/Sao_Paulo
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 markdown: kramdown
-
-### Site info:
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/bettina-st"
 author: Bettina Stingelin
-title: Bettina Stingelin writer
-email: ""
-description: > # this means to ignore newlines until "baseurl:"
-
-### App info:
-exclude: ['README.md', 'Gemfile.lock', 'vendor']
+email: 
+description: Bettina's web site
+exclude:
+- README.md
+- Gemfile.lock
+- vendor
