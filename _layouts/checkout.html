@@ -1,5 +1,9 @@
 {% include head.html %}
   <body>
+    <div class="payment-processing" style="display:none;">
+      <div class="payment-spinner"></div>
+      <p>Processando...</p>
+    </div>
     <header class="site-header header-pages" role="banner">
       <div class="header-pages-content">
         <div class="mobile-navegation">
@@ -97,6 +101,9 @@
                     <li class="icon flag-cards flag-visa"></li>
                     <li class="icon flag-cards flag-amex"></li>
                   </ul>
+                  <label class="payment-failure error" style="display:none;">
+                    Ouve um problema na transação, pode tentar novamente?
+                  </label>
                   <form id="payment-form" target="_blank" action="#" method="POST">
                       <div class="usable-creditcard-form">
                         <div class="wrapper">

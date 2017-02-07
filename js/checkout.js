@@ -13,9 +13,12 @@ $(document).ready(function(){
 
       if (data.errors) {
         // console.log(data.errors);
-        alert("Erro salvando cartão: " + JSON.stringify(data.errors));
+        $(".payment-failure").show();
+        $(".payment-failure").html("Por favor, verifique se os dados do cartão digitados estão corretos");
+        // + JSON.stringify(data.errors)
         // tratar essa excecao
       } else {
+        $(".payment-failure").hide();
         var token = data.id;
         $("#token").val( data.id );
         console.log(data);
@@ -40,7 +43,10 @@ $(document).ready(function(){
               // console.log("Chamou " + invoice_id);
               //compra realizada com sucesso!
               // Send user form
+              window.location.href = "/infantil/checkout-end.html";
             } else {
+              $(".payment-failure").show();
+              $(".payment-failure").html("Ouve um problema na transação, pode tentar novamente?");
               console.log("falhou a transação");
               console.log(data.response.errors);
             }

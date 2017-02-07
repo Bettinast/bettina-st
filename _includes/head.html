@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
   <title>{{ site.title }}</title>
   <meta name="description" content="Bettina Stingelin é uma escritora brasileira de contos infantis e ficção.">
+  {% if page.metatags %}
+    <meta name="robots" content="{{page.metatags}}">
+  {% endif %}
   <link href="/css/main.css" rel="stylesheet">
   <link rel="icon" href="/img/favico.png" type="image/png">
   <link rel="canonical" href="http://bettinastingelin.com.br">
