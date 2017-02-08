@@ -46,6 +46,8 @@ $(document).ready(function(){
              }, 3000);
            } else {
              $(".payment-processing").hide();
+             $(".payment-failure").show();
+             $(".payment-failure").html("A transação falhou, verifique os dados digitados. Se estiver tudo certo, entre em contato com nosso comercial no: bettina.escritora@gmail.com");
              console.log("falhou a transação");
              console.log(data.response.errors);
            }
