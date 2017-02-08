@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
 
   Iugu.setAccountID("CCE90E42AC11451EB74EA8C768FBF966");
- Iugu.setTestMode(true);
+  Iugu.setTestMode(true);
 
  $('#payment-form').submit(function(evt) {
    var form = $(this);
@@ -21,11 +21,10 @@ $(document).ready(function(){
 
        var post_url = "http://avelar-dashboardpitzi.rhcloud.com/orders/dd0a54c40de33ebe1baf59ca7f7eaddd/" + token
        var email = $('#input-q8').val(); //email do cliente
-      //  var getAmount = $('#input-q12').val();
-       var amount = 1000; // valor em centavos
+       var amount = $('#input-q12').val()*100; // valor em centavos
        var qtde = 1; // quantidade de produtos
        var item = $('#input-q6').val(); // que produto está sendo vendido
-       console.log(post_url);
+      //  console.log(post_url);
        $(".payment-processing").show();
        console.log("Vai chamar");
 
@@ -38,6 +37,8 @@ $(document).ready(function(){
            if(data.success) {
              // pagamento feito com sucesso, enviar para planilha
              var invoice_id = data.response.invoice_id; // id da transação no iugu "E9EFA86CC7344176B8485D237FD20817"
+             $("#input-q9").val(invoice_id);
+             console.log(invoice_id);
              console.log(data.success);
              console.log("Chamou");
              $('#input-form-shiping').submit();
@@ -50,6 +51,7 @@ $(document).ready(function(){
              $(".payment-failure").html("A transação falhou, verifique os dados digitados. Se estiver tudo certo, entre em contato com nosso comercial no: bettina.escritora@gmail.com");
              console.log("falhou a transação");
              console.log(data.response.errors);
+             console.log(data);
            }
          },
          type: 'POST'
