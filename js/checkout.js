@@ -5,69 +5,68 @@ $(document).ready(function(){
   });
 
   Iugu.setAccountID("CCE90E42AC11451EB74EA8C768FBF966");
-  Iugu.setTestMode(true);
+ Iugu.setTestMode(true);
 
-  $('#payment-form').submit(function(evt) {
-    var form = $(this);
-    var tokenResponseHandler = function(data) {
+ $('#payment-form').submit(function(evt) {
+   var form = $(this);
+   var tokenResponseHandler = function(data) {
 
-      if (data.errors) {
-        // console.log(data.errors);
-        $(".payment-failure").show();
-        $(".payment-failure").html("Por favor, verifique se os dados do cartão digitados estão corretos");
-        // + JSON.stringify(data.errors)
-        // tratar essa excecao
-      } else {
-        $(".payment-failure").hide();
-        var token = data.id;
-        $("#token").val( data.id );
-        console.log(data);
+     if (data.errors) {
+       console.log(data.errors);
+       alert("Erro salvando cartão: " + JSON.stringify(data.errors));
+     } else {
+       var token = data.id;
+       $("#token").val( data.id );
+       console.log(data);
 
-        var post_url = "http://avelar-dashboardpitzi.rhcloud.com/orders/dd0a54c40de33ebe1baf59ca7f7eaddd/" + token;
-        var email = $('#input-q8').val(); //email do cliente $("#email").val();
-        var amount = $('#input-q12').val()*1000; // valor em centavos 25*100
-        var qtde = 1; // quantidade de produtos
-        var item = $('#input-q6').val(); // que produto está sendo vendido
-        console.log(post_url);
-        // console.log("Vai chamar");
+       var post_url = "http://avelar-dashboardpitzi.rhcloud.com/orders/dd0a54c40de33ebe1baf59ca7f7eaddd/" + token
+       var email = $('#input-q8').val(); //email do cliente
+      //  var getAmount = $('#input-q12').val();
+       var amount = 1000; // valor em centavos
+       var qtde = 1; // quantidade de produtos
+       var item = $('#input-q6').val(); // que produto está sendo vendido
+       console.log(post_url);
+       $(".payment-processing").show();
+       console.log("Vai chamar");
 
-        $.ajax({
-          url: post_url,
-          crossDomain: true,
-          data: {email: email, amount: amount, qtd: qtde, item: item},
-          dataType: 'json',
-          success: function(data) {
-            if(data.success) {
-              // pagamento feito com sucesso, enviar para planilha
-              var invoice_id = data.response.invoice_id; // id da transação no iugu "E9EFA86CC7344176B8485D237FD20817"
-              // console.log("Chamou " + invoice_id);
-              //compra realizada com sucesso!
-              // Send user form
-              window.location.href = "/infantil/checkout-end.html";
-            } else {
-              $(".payment-failure").show();
-              $(".payment-failure").html("Ouve um problema na transação, pode tentar novamente?");
-              console.log("falhou a transação");
-              console.log(data.response.errors);
-            }
-          },
-          type: 'POST'
-        });
-      }
-      // Seu código para continuar a submissão
-      // Ex: form.submit();
-    }
-    Iugu.createPaymentToken(this, tokenResponseHandler);
-    return false;
-  });
+       $.ajax({
+         url: post_url,
+         crossDomain: true,
+         data: {email: email, amount: amount, qtd: qtde, item: item},
+         dataType: 'json',
+         success: function(data) {
+           if(data.success) {
+             // pagamento feito com sucesso, enviar para planilha
+             var invoice_id = data.response.invoice_id; // id da transação no iugu "E9EFA86CC7344176B8485D237FD20817"
+             console.log(data.success);
+             console.log("Chamou");
+             $('#input-form-shiping').submit();
+             setTimeout(function(){
+               window.location.href = "/infantil/checkout-end.html";
+             }, 3000);
+           } else {
+             $(".payment-processing").hide();
+             console.log("falhou a transação");
+             console.log(data.response.errors);
+           }
+         },
+         type: 'POST'
+       });
+
+
+     }
+     // Seu código para continuar a submissão
+     // Ex: form.submit();
+   }
+   Iugu.createPaymentToken(this, tokenResponseHandler);
+   return false;
+ });
 
   $.getScript("../js/jquery.validate.min.js", function(){
     $(".checkout-forms").validate({
       // Validate both google form and iugui form
       rules: {
-        // simple rule, converted to {required:true}
         name: "required",
-        // compound rule
         email: {
           required: true,
           email: true
@@ -91,7 +90,9 @@ $(document).ready(function(){
         cep: "Qual o cep?",
         city: "Ops, faltou a cidade?",
         state: "Ops, estado do endereço?",
-      }
+      },
+      // success: "valid",
+      // submitHandler: function() { alert("Submitted!"); }
     });
-  });
-});//wrapper end
+  }); //End getScript
+}); //wrapper end
