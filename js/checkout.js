@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
 
   Iugu.setAccountID("CCE90E42AC11451EB74EA8C768FBF966");
-  Iugu.setTestMode(true);
+  // Iugu.setTestMode(true);
 
  $('#payment-form').submit(function(evt) {
    var form = $(this);
@@ -66,6 +66,12 @@ $(document).ready(function(){
    return false;
  });
 
+  $.getScript("../js/jquery-mask-min.js", function(){
+    $('.credit_card_expiration').mask('00/00');
+    $('.credit_card_number').mask('0000000000000000');
+    $('.credit_card_cvv').mask('000');
+  });
+
   $.getScript("../js/jquery.validate.min.js", function(){
     $(".checkout-forms").validate({
       // Validate both google form and iugui form
@@ -82,9 +88,7 @@ $(document).ready(function(){
         state: "required",
       },
       messages: {
-        // simple rule, converted to {required:true}
         name: "Ops, queremos chamar você pelo nome :)",
-        // compound rule
         email: {
           required: "Qual seu email para contato?",
           email: "Ops, verifique se o email está certinho?"
