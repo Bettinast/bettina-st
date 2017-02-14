@@ -44,6 +44,24 @@ footer {
 }
 
 /* #Pages */
+.page-content-about-image {
+  display:inline-block;
+  margin-right:100px;
+  vertical-align:top;
+}
+.page-content-about-text {
+  display:inline-block;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.72;
+  letter-spacing: -.003em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+}
+
 .book-scrool {
   width:100%;
   overflow:hidden;

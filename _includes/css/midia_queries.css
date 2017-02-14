@@ -84,6 +84,14 @@
     font-size: 38px;
     padding: 0 10px;
   }
+  .page-content-about-image {
+    text-align: center;
+    display: block;
+    width: 100%;    
+  }
+  .page-content-about-text {
+    display: block;
+  }
 
   /* Grid */
   .col-20, .col-30, .col-33, .col-70,
