@@ -17,6 +17,9 @@ layout: page
       </a>
       <p>
         {{post.excerpt}}
+        {% if post.excerpt != post.content %}
+          <a href="{{ post.url }}">Leia Mais</a>
+        {% endif %}
       </p>
     </div>
   {% endfor %}
