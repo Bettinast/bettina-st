@@ -133,10 +133,7 @@
   .page-content-blog {
     padding: 0 20px;
   }
-  .wrapper-post article {
-    margin: -100px auto;
-    padding: 0 30px 150px 30px;
-  }
+
   /* Store */
   .cart-page-book-infos {
     display: block;
@@ -164,6 +161,14 @@
 }
 
 @media only screen and (max-width:420px){
+  .wrapper-post,
+  .wrapper-post article {
+    margin: -40px auto 50px auto !important;
+    padding: 0 30px 150px 30px;
+  }
+  .wrapper-post .back-blog {
+    margin-left: 0;
+  }
   .bg-landing-top {
     background-position: -500px 0 !important;
   }
