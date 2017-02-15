@@ -4,7 +4,6 @@ date: 2017-02-14 17:20:00 -02:00
 layout: post
 ---
 
-
 Passei boa parte da minha vida adulta remexendo no passado dos outros. É verdade que o meu interesse por ele começou ainda muito cedo, pois foi nele que encontrei alívio para as minhas angústias adolescentes. Era para ele que fugia quando achava que o presente era difícil demais para encarar. O passado às vezes confundia-se com a realidade.
 
 <!-- more -->
