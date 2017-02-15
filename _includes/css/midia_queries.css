@@ -87,7 +87,7 @@
   .page-content-about-image {
     text-align: center;
     display: block;
-    width: 100%;    
+    width: 100%;
   }
   .page-content-about-text {
     display: block;
@@ -133,7 +133,10 @@
   .page-content-blog {
     padding: 0 20px;
   }
-
+  .wrapper-post article {
+    margin: -100px auto;
+    padding: 0 30px 150px 30px;
+  }
   /* Store */
   .cart-page-book-infos {
     display: block;
